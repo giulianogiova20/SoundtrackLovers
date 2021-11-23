@@ -161,32 +161,6 @@ h4 input{
 }
 
 
-/*------------- FLEX DIV ------------*/
-
-.div-flex{   
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 360px;
-    height: 600px;
-  /*   border: solid 2px greenyellow; */
-}
-
-/*------------- FLEX ARTICLE ------------*/
-.article-flex{    
-    display: flex;
-    flex-flow: row   nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    background-color: #fbbd11;
-    border: 2px solid white;
-    width: 300px;
-    height: 150px;
-    font-size: 80%;
-}
-
 .w-card{
     width: 200px;
 }
@@ -219,11 +193,6 @@ h4 input{
     grid-template-columns: 414px;
 }
 /* Nombro las areas */
-
-/* SE COLOCA BORDE VISIBLE PARA AJUSTAR LOS GRIDS */
-/* .borderz{
-    border: 2px solid greenyellow; 
-} */
 
 header{
     grid-area: header;
