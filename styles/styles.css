@@ -1,0 +1,530 @@
+*{margin: 0;
+padding: 0;
+}
+
+/***********************************ETIQUETAS ***********************************/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../images/what-the-hex-dark.png");
+}
+
+header{ 
+    background-color: #eeaf01;  
+    padding: 5px 60px;
+}  
+/* ----------MENU---------- */
+
+
+nav{
+    background-color: #eeaf01;
+    font-weight: bold;
+} 
+
+a:hover{
+    color: white !important;
+}
+
+
+/*------------- MENU --------*/
+p{
+    color:rgb(190, 190, 190);
+    font-size: 80%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+section{
+    padding: 5px 10px;
+    }
+
+table {         /*--------------- TABLA------------- */
+    border-collapse: collapse;
+    background-color: #fbbd11;
+    width: 250px;  
+    border: 3px solid gray ;
+    margin: 10px 10px 10px 0px;
+ }
+
+ th {
+    width: 10%;
+    height: 15%;
+    text-align: left;
+    background-color: #c28e00;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    font-size: 80%;
+    font-weight: bold;
+ }
+
+ td {
+    width: 25%;
+    text-align: left;
+    border: 1px solid gray;
+    padding: 5px 5px 0px 10px;
+    font-size: 60%;
+    font-weight: bold;
+ }
+
+ ol{
+     list-style-image: url(https://mdn.mozillademos.org/files/11981/starsolid.gif);
+ }
+/*------------------------- TABLA-------------------- */
+         
+
+ form {         /* ------------FORMULARIO---------- */
+    font-size: 80%;
+    font-weight: bold;
+    color: white;
+ }
+
+ textarea{
+    font-family: 'Poppins', sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    margin-left: 10px;
+ }
+
+ input{
+    width:50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+    margin: 10px;
+    display: inline-block;
+ }
+
+ select{
+    font-family: 'Poppins', sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+    margin: 10px;
+ }
+
+ h4{
+     font-size: 16px;
+}
+
+h4 input{
+    width: 20px;
+}
+
+
+ fieldset{
+
+    padding-left: 10px;
+    margin: 5px;
+    border: solid 1px white;
+ }
+        /* ------------FORMULARIO------------ */
+ footer{
+     text-align: center;
+ }
+
+/* *******************************CLASES *******************************/
+
+ .colorSubtitle{
+    color: #ffffff;
+}
+
+.colorTabletitle{
+    background-color:#aeb7b3;
+}
+
+.uPpercase{     /* Titulos en Mayuscualas */
+    text-transform: uppercase;
+}
+
+
+.redText{
+    color: red;
+}
+
+.greenText{
+    color: greenyellow;
+}
+
+.textPadding{
+    padding-top: 30px;
+}
+
+.paddingL{
+        margin-left: 5px;
+}
+
+.textSize{      /* Texto QUOTE */
+    width: 360px;
+    }
+
+.textSize2{
+    width: 360px;
+}
+
+
+/*------------- FLEX DIV ------------*/
+
+.div-flex{   
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 360px;
+    height: 600px;
+  /*   border: solid 2px greenyellow; */
+}
+
+/*------------- FLEX ARTICLE ------------*/
+.article-flex{    
+    display: flex;
+    flex-flow: row   nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: #fbbd11;
+    border: 2px solid white;
+    width: 300px;
+    height: 150px;
+    font-size: 80%;
+}
+
+.w-card{
+    width: 200px;
+}
+
+.h-card{
+    height: 280px;
+}
+
+.scale-card:hover{
+    transform:scale(1.01,1.01);  /* SCALE */
+    
+}
+
+
+/* ################################ GRID ############################# */
+
+
+/* GRIDS por AREAS */
+.grid-areas{    /* INDEX */
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "quote"
+    "FS"
+    "YS"
+    "news"
+    "foot"
+    ;
+    grid-template-rows: 0.3fr 0.8fr 1fr 1fr 1.8fr 0.1fr;
+    grid-template-columns: 414px;
+}
+/* Nombro las areas */
+
+/* SE COLOCA BORDE VISIBLE PARA AJUSTAR LOS GRIDS */
+/* .borderz{
+    border: 2px solid greenyellow; 
+} */
+
+header{
+    grid-area: header;
+}
+
+#quote{
+    grid-area: quote;
+}
+
+#FS{
+    grid-area: FS;
+}
+#YS{
+    grid-area: YS;
+}
+
+#news{
+    grid-area: news;
+}
+
+footer{
+    grid-area: foot;
+} 
+
+.grid-areas2{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "bio" 
+    "playlist"
+    "next"
+    "foot"
+    ;
+    grid-template-rows: 1fr 0.5fr 2fr 2fr 1fr 0.3fr;
+    grid-template-columns: 414px;
+}
+
+.grid-areas3{   /* MOVIES - SERIES */
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "bio" 
+    "playlist"
+    "gallery" 
+    "next" 
+    "foot" 
+    ;
+    grid-template-rows: 1fr 0.5fr 2fr 2fr 1.5fr 1fr 0.3fr;
+    grid-template-columns: 414px;
+}
+
+/* Nombro las areas */
+#aside{
+    grid-area: aside;
+}
+
+#bio{
+    grid-area: bio;
+}
+
+#playlist{
+    grid-area: playlist;
+}
+
+#next{
+    grid-area: next;
+}
+
+.carousel-pad{  /* CAROUSEL */
+    padding-left: 90px;
+}
+/* ################################ GRID ############################# */
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/* ############################ TABLET GRID ############################# */
+@media (min-width: 600px) and (max-width: 1024px){
+
+    h5{
+        font-size: 90%;
+    }
+
+    .grid-areas {   /* INDEX */
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "quote quote"
+        "FS YS"
+        "news news"
+        "foot foot"
+        ;
+        grid-template-rows: 0.3fr 0.7fr 1.1fr 1fr 0.2fr;
+        grid-template-columns: 400px 400px;
+    }
+
+    .grid-areas2{   /* COMPOSERS - GAMES */
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "aside bio"
+        "aside playlist"
+        "aside next" 
+        "foot foot" 
+        ;
+        grid-template-rows: 0.4fr 2fr 2.5fr 0.7fr 0.3fr;
+        grid-template-columns: 150px 650px;
+    }
+
+    .grid-areas3{   /* MOVIES - SERIES */
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "aside bio bio"
+        "aside playlist gallery"
+        "aside next next" 
+        "foot foot foot" 
+        ;
+        grid-template-rows: 0.4fr 2.3fr 2.5fr 0.7fr 0.3fr;
+        grid-template-columns: 150px 325px 325px;
+    }
+
+    #gallery{
+        grid-area: gallery;
+    }
+
+/*------------------------- TABLA-------------------- */
+    table {             
+        border-collapse: collapse;
+        background-color: #fbbd11;
+        width: 250px;  
+        border: 3px solid gray ;
+        margin: 10px 10px 10px 0px;
+     }
+
+     th {
+        width: 5%;
+        height: 15%;
+        padding: 5px 5px;
+     }
+    
+     td {
+        width: 16%;
+        padding: 5px 10px;
+     }
+/*------------------------- TABLA-------------------- */
+
+     .textSize{      /* Texto QUOTE */
+        width: 600px;
+        }
+    
+    .textSize2{
+        width: 680px;
+    }
+
+    .topMargin{
+    margin-top: 40px;
+    }
+    
+    .carousel-pad{  /* CAROUSEL */
+        padding-left: 90px;
+    }
+
+    .w-card{
+        width: 220px;
+    }
+
+    .h-card{
+        height: 240px;
+    }
+}
+
+
+/* ############################ DESKTOP GRID ############################# */
+@media (min-width: 1025px){
+    .grid-areas {   /* INDEX */
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "quote quote"
+        "FS YS"
+        "news news"
+        "foot foot"
+        ;
+        grid-template-rows: 0.4fr 1.7fr 3fr 1.8fr 0.5fr;
+        grid-template-columns: 680px 680px;
+    }
+
+    .grid-areas2{   /* COMPOSERS - GAMES */
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "aside bio"
+        "aside playlist"
+        "aside next" 
+        "foot foot" 
+        ;
+        grid-template-rows: 0.4fr 2fr 2.5fr 0.7fr 0.3fr;
+        grid-template-columns: 280px 1080px;
+    }
+
+    .grid-areas3{   /* MOVIES - SERIES */
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "aside bio bio"
+        "aside playlist gallery"
+        "aside next next" 
+        "foot foot foot" 
+        ;
+        grid-template-rows: 0.4fr 2.5fr 2.5fr 0.7fr 0.3fr;
+        grid-template-columns: 240px 560px 560px;
+    }
+
+
+    .posiTion{              /* POSICIONAR IMAGEN A LA DERECHA */
+        transform: translate(700px,-180px) ;
+        position: absolute; 
+    }
+
+    section{
+    padding: 20px 80px;
+    }
+
+    table {
+        border-collapse: collapse;
+        background-color: #fbbd11;
+        width: 550px;  
+        border: 3px solid gray;
+     }
+
+     .textSize{      /* Texto QUOTE */
+        width: 950px;
+        font-size: 20px;
+        }
+    
+    .textSize2{
+        width: 680px;
+        font-size: 20px;
+    }
+
+    .topMargin{
+        margin-top: 40px;
+        }
+
+    .carousel-pad{  /* CAROUSEL */
+        padding-left: 100px;
+    }
+
+    .w-card{
+        width: 200px;
+    }
+
+    .h-card{
+        height: 300px;
+    }
+
+    .carousel-control-prev{
+        transform: translate(-20px,0) ;
+        position: absolute; 
+    }
+    .carousel-control-next {
+        transform: translate(60px,0) ;
+        position: absolute; 
+    }
+
+
+    /* -----------------ANIMATION-------- */
+    @keyframes fadeInDown {
+        0% {
+           opacity: 0;
+           transform: translateX(-250px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateX(0);
+        }
+     } 
+     .animation-text{
+    animation-name: fadeInDown;
+    animation-iteration-count: initial;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+         }
+         100% {
+            opacity: 1;
+         }
+     } 
+     .animation-img{
+    animation-name: appear;
+    animation-iteration-count: initial;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    }
+
+}
