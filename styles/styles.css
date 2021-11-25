@@ -7,11 +7,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-image: url("../images/what-the-hex-dark.png");
 }
-
-header{ 
-    background-color: #eeaf01;  
-    padding: 5px 60px;
-}  
+ 
 /* ----------MENU---------- */
 
 
@@ -196,6 +192,8 @@ h4 input{
 
 header{
     grid-area: header;
+    background-color: #eeaf01;  
+    padding: 5px 60px;
 }
 
 #quote{
