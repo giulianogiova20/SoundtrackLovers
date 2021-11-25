@@ -1,0 +1,9 @@
+#ignore folders
+
+node_modules
+scss
+
+#ignore files
+
+.json
+
