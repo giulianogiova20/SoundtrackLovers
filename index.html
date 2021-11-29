@@ -89,30 +89,41 @@
                     </table>
     </section>
     <section id="YS" class="borderz">
-        <h3 class="colorSubtitle topMargin">Your Selection</h3><!-- FORMULARIO -->
+        <h3 class="colorSubtitle topMargin">Your Selection</h3>
             <p>Select your favourite soundtrack</p>
-            <form action="">
-                <fieldset>
-                    <legend>Personal Info & Selection</legend>
-                    <input type="text" name="name" placeholder="Name & Last ame">
-                    <input type="email" name="e-mail" placeholder="E-mail">
-                    <input type="tel" name="phone" placeholder="Phone (e.g:447890123456)">
-                    <h4 class="paddingL">¿Do you want to subscribe to newsletter?
-                    <input type="checkbox" name="accept" value="1">
-                    </h4>
-                    <div class="paddingL">
-                        <label>Genre</label>
-                        <select name="Genre">
-                            <option value="movies">Movies</option>
-                            <option value="series">Series</option>
-                            <option value="games">Games</option>
-                        </select>
-                    </div>
-                    <textarea name="coments" cols="50" rows="8" placeholder="Tell us your favourite song or album from the selected genre"></textarea>
-                    <input type="reset" value="Delete fields">
-                    <input type="submit" value="Send">
-                </fieldset>
-            </form>
+            <form>
+                <div class="mb-2">
+                    <label for="Name" class="form-label">Name and Lastname</label>
+                    <input type="text" class="form-control" id="validationCustom01">
+                </div>
+                <div class="mb-2">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-2">
+                  <label for="exampleInputPassword1" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-2 form-check">
+                  <label class="form-check-label" for="exampleCheck1">Do you want to subscribe to newsletter?</label>
+                  <input type="checkbox" class="form-check-input bg-warning" id="exampleCheck1">
+                </div>
+                <hr/>
+                <div class="mb-2">
+                    <select class="form-select-sm" aria-label="Default select example">
+                        <option selected>Select genre</option>
+                        <option value="1">Movies</option>
+                        <option value="2">Games</option>
+                        <option value="3">Series</option>
+                      </select>
+                </div>
+                <div class="mb-2">
+                    <label for="exampleFormControlTextarea1" class="form-label">Tell us your favourite song or album from the selected genre</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+              </form>
     </section>
     <section id="news" class="borderz">
         <h2 class="colorSubtitle uPpercase">Latest News</h2> <!-- NOTICIAS -->
