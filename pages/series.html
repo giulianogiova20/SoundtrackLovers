@@ -16,7 +16,7 @@
     <header>
         <h1 hidden>Series Soundtracks</h1>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container">
                     <div class="d-flex flex-column flex-sm-row">
                         <a class="nav-link active mb-1" href="../index.html"><img src="../images/logo.svg" alt="Logo"><p class="text-dark">Soundtrack Lovers</p></a>
                         <button class="navbar-toggler navbar-dark bg-dark h-50 align-self-center mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,31 +35,40 @@
             </div>
         </nav>
     </header> 
-    <section class="borderz colorSubtitle" id="aside">
-        <a href="">Selected Movie</a>
-        <!-- Se creara un boton hoverable que contendra los 10 albums mas famosos y su link a la bio -->
-    </section>
-    <section class="borderz" id="bio">
-        <h2 class="colorSubtitle">Making Of: Beetlejuice, Batman, The Simpsons & More</h2>
-        <iframe width="70%" height="70%" src="https://www.youtube.com/embed/4dvO_I2lGPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Some statistics about number of listenings</p>
-    </section>
-    <section class="borderz" id="playlist">
-        <h2 class="colorSubtitle">Playlist</h2>
-        <iframe src="https://open.spotify.com/embed/playlist/09wboFMwjJvM7huDlqvEAp" width="80%" height="380" frameborderz="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </section>
-    <section class="borderz" id="gallery">
-        <h2 class="colorSubtitle">Gallery</h2>
-        <img src="https://i.ytimg.com/vi/mn_ruf2amjs/maxresdefault.jpg" width="80%" height="60%" alt="Batman Suite Orchestra">
+    <section class="container">
+        <div class="row">
+            <div class="col-3"><a href="">Selected Serie</a></div>
+            <!-- Se creara un boton hoverable que contendra los 10 albums mas famosos y su link a la bio -->
+            <div class="col-8">
+                <div class="my-4">
+                    <h2 class="text-white">Making Of: Beetlejuice, Batman, The Simpsons & More</h2>
+                    <iframe width="70%" height="70%" src="https://www.youtube.com/embed/4dvO_I2lGPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Some statistics about number of listenings</p>
+                </div>
+                <div class="my-4">
+                    <h2 class="text-white">Playlist</h2>
+                    <iframe src="https://open.spotify.com/embed/playlist/09wboFMwjJvM7huDlqvEAp" width="80%" height="380" frameborderz="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div class="my-4">
+                    <h2 class="text-white">Gallery</h2>
+                    <img src="https://i.ytimg.com/vi/mn_ruf2amjs/maxresdefault.jpg" width="80%" height="60%" alt="Batman Suite Orchestra">
+                </div>
+            </div>
+        </div>
     </section>
     <section class="borderz" id="next">
-        <h2 class="colorSubtitle">Upcoming Serie Soundtracks</h2>
-            <ul class="colorSubtitle">
-                <li><a href="">Serie I</a></li>
-                <li><a href="">Serie II</a></li>
-                <li><a href="">Serie III</a></li>
-            </ul>
-    </section>
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <h2 class="text-white">Upcoming Serie Soundtracks</h2>
+                        <ul class="text-white">
+                            <li><a href="">Serie I</a></li>
+                            <li><a href="">Serie II</a></li>
+                            <li><a href="">Serie III</a></li>
+                        </ul>
+                </div>
+            </div>
+        </section>
     <footer><!-- Pie de pagina -->
         <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

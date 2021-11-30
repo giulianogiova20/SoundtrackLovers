@@ -14,7 +14,7 @@ a:hover {
   color: white !important; }
 
 section {
-  padding: 5px 10px; }
+  padding: 20px 0px; }
 
 table {
   /*--------------- TABLA------------- */
@@ -47,9 +47,6 @@ ol {
 
 /*------------------------- TABLA-------------------- */
 /* *******************************CLASES *******************************/
-.colorSubtitle {
-  color: #ffffff; }
-
 .colorTabletitle {
   background-color: #aeb7b3; }
 
@@ -63,13 +60,6 @@ ol {
 .greenText {
   color: greenyellow; }
 
-.paddingL {
-  margin-left: 5px; }
-
-.textSize {
-  /* Texto QUOTE */
-  width: 360px; }
-
 header {
   background-color: #eeaf01;
   padding: 5px 60px; }
@@ -82,71 +72,71 @@ footer {
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /* ############################ MOBILE GRID ############################# */
 @media (max-width: 599px) {
-  h3 a {
-    font-size: 70%; }
-  .img-card-size {
-    width: 178px;
-    height: 100px; }
-  .w-card {
-    width: 180px; }
-  .h-card {
-    height: 320px; }
-  .carousel-control-prev {
-    transform: translate(-45px, 0);
-    position: absolute; }
-  .carousel-control-next {
-    transform: translate(30px, 0);
-    position: absolute; } }
+  .quote__text-size {
+    /* Texto QUOTE */
+    padding-right: 40px; }
+  .quote__lotr-size {
+    width: 240px;
+    height: 180px; }
+  h3 {
+    line-height: 0.8; }
+    h3 a {
+      font-size: 60%; }
+  .news__card-img {
+    width: 134px;
+    height: 80px; }
+  .news__card-width {
+    width: 136px; }
+  .news__card-height {
+    height: 270px; } }
 
 /* ############################ TABLET GRID ############################# */
-@media (min-width: 600px) and (max-width: 1024px) {
-  h3 a {
-    font-size: 68%; }
-  .textSize {
+@media (min-width: 600px) and (max-width: 768px) {
+  .quote__text-size {
     /* Texto QUOTE */
-    width: 600px; }
-  .img-card-size {
-    width: 198px;
-    height: 100px; }
-  .w-card {
-    width: 200px; }
-  .h-card {
-    height: 300px; }
-  .carousel-control-prev {
-    transform: translate(-60px, 0);
-    position: absolute; }
-  .carousel-control-next {
-    transform: translate(60px, 0);
-    position: absolute; } }
+    padding-right: 80px; }
+  .quote__lotr-size {
+    width: 320px;
+    height: 220px; }
+  table {
+    border-collapse: collapse;
+    background-color: #fbbd11;
+    width: 500px;
+    border: 3px solid gray; }
+  h3 {
+    line-height: 0.8; }
+    h3 a {
+      font-size: 65%; }
+  .news__card-img {
+    width: 154px;
+    height: 80px; }
+  .news__card-width {
+    width: 156px; }
+  .news__card-height {
+    height: 280px; } }
 
 /* ############################ DESKTOP GRID ############################# */
-@media (min-width: 1025px) {
-  section {
-    padding: 20px 80px; }
+@media (min-width: 769px) {
+  .quote__text-size {
+    /* Texto QUOTE */
+    padding-right: 100px;
+    font-size: 20px; }
   table {
     border-collapse: collapse;
     background-color: #fbbd11;
     width: 550px;
     border: 3px solid gray; }
-  .textSize {
-    /* Texto QUOTE */
-    width: 950px;
-    font-size: 20px; }
-  h3 a {
-    font-size: 60%; }
-  .img-card-size {
-    width: 198px;
-    height: 100px; }
-  .w-card {
-    width: 200px; }
-  .h-card {
-    height: 320px; }
-  .carousel-control-prev {
-    transform: translate(-100px, 0);
-    position: absolute; }
-  .carousel-control-next {
-    transform: translate(80px, 0);
-    position: absolute; } }
+  h3 {
+    line-height: 0.8; }
+    h3 a {
+      font-size: 60%; }
+  .news__card-img {
+    width: 170px;
+    height: 90px; }
+  .news__card-width {
+    width: 172px; }
+  .news__card-height {
+    height: 300px; } }
 
 /* CAROUSEL SCALE */
 .scale-card:hover {
@@ -156,7 +146,7 @@ footer {
 /* ----------------- */
 .text-in-img {
   position: relative;
-  display: inline-block;
+  display: block;
   text-align: center; }
 
 .texto-encima {
