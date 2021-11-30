@@ -12,11 +12,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="grid-areas"> <!-- Cuerpo -->
-    <header class="borderz">
+<body> <!-- Cuerpo -->
+    <header>
         <h1 hidden>Soundtracks</h1>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container">
                     <div class="d-flex flex-column flex-sm-row">
                         <a class="nav-link active mb-1" href="./index.html"><img src="./images/logo.svg" alt="Logo"><p class="text-dark">Soundtrack Lovers</p></a>
                         <button class="navbar-toggler navbar-dark bg-dark h-50 align-self-center my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,79 +35,87 @@
             </div>
         </nav>
     </header>
-    <section id="quote" class="borderz">
-        <p class="textSize animation-text">Soundtracks are such a vital part when creating and watching a movie, it helps the director set the tone of a scene, and helps the audience member empathise with a character.</p>
-        <p class="textSize2 textPadding animation-text">What would The Lord of the Rings or Lion King be without their soundtracks? Let’s just say most of the emotion would go down the drain pretty quickly without the music. In this blog post, filmmaker Nuno Sá Pessoa highlights 10 of the best soundtracks of all time.</p>
-        <img src="./images/lotr.jpg" alt="Lord Of The Rings" class="posiTion animation-img">
+    <section class="container text-in-img my-5">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-9">
+                <p class="textSize animation-text texto-encima centrado">Soundtracks are such a vital part when creating and watching a movie, it helps the director set the tone of a scene, and helps the audience member empathise with a character. <br><br> What would The Lord of the Rings or Lion King be without their soundtracks? Let’s just say most of the emotion would go down the drain pretty quickly without the music. In this site, you will understand why we love Soundtracks so much.</p>
+                <img src="./images/lotr.png" alt="Lord Of The Rings" class="animation-img">
+            </div>
+        </div>
     </section>
-    <section id="FS" class="borderz">
-        <h2 class="colorSubtitle uPpercase">Selections</h2>
-                    <h3 class="colorSubtitle">Fan's Selection</h3><!-- FAN'S SELECTION -->
-                    <table>
-                        <tr class="colorTabletitle">
-                            <th>Genre</th>
-                            <th>Composer</th>
-                            <th>Top Album</th>
-                            <th>Top 3 Song's</th>
-                        </tr>
-                        <tr>
-                            <th>Movies</th>
-                            <td>Hans Zimmer</td>
-                            <td>Inception</td>
-                            <td>
-                                <ol>
-                                    <li>Time</li>
-                                    <li>Dream Is Collapsing</li>
-                                    <li>Dream Within A Dream</li>
-                                </ol>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Series</th>
-                            <td>Ramin Djawadi</td>
-                            <td>Game Of Thrones: Season 8</td>
-                            <td>
-                                <ol>
-                                    <li>Main Titles</li>
-                                    <li>Light Of The Seven</li>
-                                    <li>Dracarys</li>
-                                </ol>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Games</span></th>
-                            <td>Martin O'Donnell/<br>Salvatori</td>
-                            <td>Halo: Combat Evolved</td>
-                            <td>
-                                <ol>
-                                    <li>Halo</li>
-                                    <li>Brothers In Arms</li>
-                                    <li>Opening Suite</li>
-                                </ol>
-                            </td>
-                        </tr>
-                    </table>
+    <section class="container my-2">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-10 col-lg-6">
+                <h2 class="colorSubtitle">Fan's Selection</h2><!-- FAN'S SELECTION -->
+                <table>
+                    <tr class="colorTabletitle">
+                        <th>Genre</th>
+                        <th>Composer</th>
+                        <th>Top Album</th>
+                        <th>Top 3 Song's</th>
+                    </tr>
+                    <tr>
+                        <th>Movies</th>
+                        <td>Hans Zimmer</td>
+                        <td>Inception</td>
+                        <td>
+                            <ol>
+                                <li>Time</li>
+                                <li>Dream Is Collapsing</li>
+                                <li>Dream Within A Dream</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Series</th>
+                        <td>Ramin Djawadi</td>
+                        <td>Game Of Thrones: Season 8</td>
+                        <td>
+                            <ol>
+                                <li>Main Titles</li>
+                                <li>Light Of The Seven</li>
+                                <li>Dracarys</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Games</span></th>
+                        <td>Martin O'Donnell/<br>Salvatori</td>
+                        <td>Halo: Combat Evolved</td>
+                        <td>
+                            <ol>
+                                <li>Halo</li>
+                                <li>Brothers In Arms</li>
+                                <li>Opening Suite</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </section>
-    <section id="YS" class="borderz">
-        <h3 class="colorSubtitle topMargin">Your Selection</h3>
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-10 col-lg-6">
+            <h2 class="colorSubtitle">Your Selection</h2>
             <p>Select your favourite soundtrack</p>
             <form>
                 <div class="mb-2">
-                    <label for="Name" class="form-label">Name and Lastname</label>
+                    <label for="Name" class="form-label text-white">Name and Lastname</label>
                     <input type="text" class="form-control" id="validationCustom01">
                 </div>
                 <div class="mb-2">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-2">
-                  <label for="exampleInputPassword1" class="form-label">Phone</label>
-                  <input type="tel" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputPassword1" class="form-label text-white">Phone</label>
+                    <input type="tel" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-2 form-check">
-                  <label class="form-check-label" for="exampleCheck1">Do you want to subscribe to newsletter?</label>
-                  <input type="checkbox" class="form-check-input bg-warning" id="exampleCheck1">
+                    <label class="form-check-label text-white" for="exampleCheck1">Do you want to subscribe to newsletter?</label>
+                    <input type="checkbox" class="form-check-input bg-warning" id="exampleCheck1">
                 </div>
                 <hr/>
                 <div class="mb-2">
@@ -116,104 +124,109 @@
                         <option value="1">Movies</option>
                         <option value="2">Games</option>
                         <option value="3">Series</option>
-                      </select>
+                        </select>
                 </div>
                 <div class="mb-2">
-                    <label for="exampleFormControlTextarea1" class="form-label">Tell us your favourite song or album from the selected genre</label>
+                    <label for="exampleFormControlTextarea1" class="form-label text-white">Tell us your favourite song or album from the selected genre</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
+                    </div>
                 <button type="submit" class="btn btn-warning">Submit</button>
-              </form>
+                </form>
+            </div>
+        </div>
     </section>
-    <section id="news" class="borderz">
-        <h2 class="colorSubtitle uPpercase">Latest News</h2> <!-- NOTICIAS -->
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner carousel-pad">
-                    <div class="carousel-item active"> <!-- ITEM ACTIVE -->
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 w-100"> <!-- ROW ACTIVE -->
-                            <div class="col">
-                            <div class="card h-card w-card scale-card my-1">
-                                <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2021/09/Forza-Horizon-5--Every-Car-Confirmed-So-Far.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5"  alt="Forza Horizon">
-                                <div class="card-body bg-warning">
-                                <h5 class="card-title"><a href="https://screenrant.com/forza-horizon-5-game-soundtrack-reveal/" target="blank" class="link-dark">Forza Horizon 5's Full Soundtrack Revealed After Game Goes Gold</a>                                  </h5>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col">
-                            <div class="card h-card w-card scale-card my-1">
-                                <img src="https://i.blogs.es/78ee7e/x83rf1n/1366_2000.jpg"  alt="Spencer">
-                                <div class="card-body bg-warning">
-                                <h5 class="card-title"><a href="https://thequietus.com/articles/30694-jonny-greenwood-new-soundtrack-work-spencer-film" target="blank" class="link-dark">Jonny Greenwood Details 'Spencer' Soundtrack</a></h5>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col">
-                            <div class="card h-card w-card scale-card my-1">
-                                <img src="https://9to5fortnite.com/wp-content/uploads/2021/09/venom-2-eminem.jpg"  alt="Venom-Eminem">
-                                <div class="card-body bg-warning">
-                                <h5 class="card-title"><a href="https://www.detroitnews.com/story/entertainment/2021/09/28/eminem-teases-appearance-venom-sequels-soundtrack/5908803001/" target="blank" class="link-dark">Eminem teases appearance on 'Venom' sequel's soundtrack</a></h5>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-card w-card scale-card my-1">
-                                <img src="https://www.egames.news/__export/1635627941505/sites/debate/img/2021/10/29/doom_lightyear.jpg_172596871.jpg"  alt="BUZZ">
-                                <div class="card-body bg-warning">
-                                    <h5 class="card-title"><a href="https://www.egames.news/entretenimiento/Ponen-el-soundtrack-de-Doom-en-el-trailer-de-Lightyear-y-combina-perfecto-20211029-0007.html" target="blank" class="link-dark">Doom's Soundtrack on Lightyear's trailer combines awesome</a></h5>
-                                </div>
-                                </div>
-                            </div>
-                        </div> <!-- ROW ACTIVE -->
-                    </div> <!-- ITEM ACTIVE -->
-                    <div class="carousel-item"> <!-- ITEM -->
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 w-100"> <!-- ROW -->
-                            <div class="col">
-                            <div class="card h-card w-card scale-card my-1">
-                                <img src="https://www.fanbolt.com/storage/2021/11/Netflix-Bruised-800x500.jpg"  alt="Bruised">
-                                <div class="card-body bg-warning">
-                                <h5 class="card-title"><a href="https://americansongwriter.com/all-female-soundtrack-for-new-halle-berry-film-bruised-features-h-e-r-cardi-b-saweetie-and-more/" target="blank" class="link-dark">Doom's Soundtrack on Lightyear's trailer combines awesome</a></h5>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col">
-                            <div class="card h-card w-card scale-card my-1">
-                                <img src="https://www.udiscovermusic.com/wp-content/uploads/2021/11/MicrosoftTeams-image-11.jpg"  alt="Sing 2">
-                                <div class="card-body bg-warning">
-                                <h5 class="card-title"><a href="https://www.udiscovermusic.com/news/sing-2-soundtrack-december-release/" target="blank" class="link-dark">‘Sing 2’ Original Motion Picture Soundtrack Set For December Release</a></h5>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col">
-                            <div class="card h-card w-card scale-card my-1">
-                                <img src="http://www.culturaencadena.com/images/stories/contenidoreset0021/portada.jpg"  alt="Black Lotus">
-                                <div class="card-body bg-warning">
-                                <h5 class="card-title"><a href="https://www.udiscovermusic.com/news/blade-runner-black-lotus-soundtrack-x-ambassadors-alessia-cara/" target="blank" class="link-dark">Alessia Cara And More Featured On ‘Blade Runner: Black Lotus’ Soundtrack</a></h5>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-card w-card scale-card my-1">
-                                <img src="https://www.gamespot.com/a/uploads/original/43/434805/3872478-eldenring_21.jpg"  alt="Elden Ring">
-                                <div class="card-body bg-warning">
-                                    <h5 class="card-title"><a href="https://www.gamespot.com/articles/elden-ring-collectors-edition-confirmed-after-leak-comes-with-statue-soundtrack-and-artbook/1100-6497704/" target="blank" class="link-dark">Elden Ring Collector's Edition Confirmed After Leak, Comes With Soundtrack</a></h5>
-                                </div>
-                                </div>
-                            </div>
-                        </div> <!-- ROW -->
-                    </div> <!-- ITEM -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button> 
-                </div>
-            </div> <!-- CAROUSEL -->
-
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-11">
+                <h2 class="colorSubtitle uPpercase ms-4">Latest News</h2> <!-- NOTICIAS -->
+                    <div id="carouselExampleControls" class="carousel slide mx-4" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <!-- ITEM ACTIVE -->
+                                <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4"> <!-- ROW ACTIVE -->
+                                    <div class="col">
+                                    <div class="card h-card w-card scale-card my-2">
+                                        <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2021/09/Forza-Horizon-5--Every-Car-Confirmed-So-Far.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5" class="img-card-size" alt="Forza Horizon">
+                                        <div class="card-body bg-warning">
+                                        <h3 class="card-title"><a href="https://screenrant.com/forza-horizon-5-game-soundtrack-reveal/" target="blank" class="link-dark">Forza Horizon 5's Full Soundtrack Revealed After Game Goes Gold</a>                                  </h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col">
+                                    <div class="card h-card w-card scale-card my-2">
+                                        <img src="https://i.blogs.es/78ee7e/x83rf1n/1366_2000.jpg" class="img-card-size" alt="Spencer">
+                                        <div class="card-body bg-warning">
+                                        <h3 class="card-title"><a href="https://thequietus.com/articles/30694-jonny-greenwood-new-soundtrack-work-spencer-film" target="blank" class="link-dark">Jonny Greenwood Details 'Spencer' Soundtrack</a></h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col">
+                                    <div class="card h-card w-card scale-card my-2">
+                                        <img src="https://9to5fortnite.com/wp-content/uploads/2021/09/venom-2-eminem.jpg" class="img-card-size" alt="Venom-Eminem">
+                                        <div class="card-body bg-warning">
+                                        <h3 class="card-title"><a href="https://www.detroitnews.com/story/entertainment/2021/09/28/eminem-teases-appearance-venom-sequels-soundtrack/5908803001/" target="blank" class="link-dark">Eminem teases appearance on 'Venom' sequel's soundtrack</a></h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-card w-card scale-card my-2">
+                                        <img src="https://www.egames.news/__export/1635627941505/sites/debate/img/2021/10/29/doom_lightyear.jpg_172596871.jpg" class="img-card-size" alt="BUZZ">
+                                        <div class="card-body bg-warning">
+                                            <h3 class="card-title"><a href="https://www.egames.news/entretenimiento/Ponen-el-soundtrack-de-Doom-en-el-trailer-de-Lightyear-y-combina-perfecto-20211029-0007.html" target="blank" class="link-dark">Doom's Soundtrack on Lightyear's trailer combines awesome</a></h3>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- ROW ACTIVE -->
+                            </div> <!-- ITEM ACTIVE -->
+                            <div class="carousel-item"> <!-- ITEM -->
+                                <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4"> <!-- ROW -->
+                                    <div class="col">
+                                    <div class="card h-card w-card scale-card my-2">
+                                        <img src="https://www.fanbolt.com/storage/2021/11/Netflix-Bruised-800x500.jpg" class="img-card-size"  alt="Bruised">
+                                        <div class="card-body bg-warning">
+                                        <h3 class="card-title"><a href="https://americansongwriter.com/all-female-soundtrack-for-new-halle-berry-film-bruised-features-h-e-r-cardi-b-saweetie-and-more/" target="blank" class="link-dark">Doom's Soundtrack on Lightyear's trailer combines awesome</a></h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col">
+                                    <div class="card h-card w-card scale-card my-2">
+                                        <img src="https://www.udiscovermusic.com/wp-content/uploads/2021/11/MicrosoftTeams-image-11.jpg" class="img-card-size" alt="Sing 2">
+                                        <div class="card-body bg-warning">
+                                        <h3 class="card-title"><a href="https://www.udiscovermusic.com/news/sing-2-soundtrack-december-release/" target="blank" class="link-dark">‘Sing 2’ Original Motion Picture Soundtrack Set For December Release</a></h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col">
+                                    <div class="card h-card w-card scale-card my-2">
+                                        <img src="http://www.culturaencadena.com/images/stories/contenidoreset0021/portada.jpg" class="img-card-size" alt="Black Lotus">
+                                        <div class="card-body bg-warning">
+                                        <h3 class="card-title"><a href="https://www.udiscovermusic.com/news/blade-runner-black-lotus-soundtrack-x-ambassadors-alessia-cara/" target="blank" class="link-dark">Alessia Cara And More Featured On ‘Blade Runner: Black Lotus’ Soundtrack</a></h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-card w-card scale-card my-2">
+                                        <img src="https://www.gamespot.com/a/uploads/original/43/434805/3872478-eldenring_21.jpg" class="img-card-size" alt="Elden Ring">
+                                        <div class="card-body bg-warning">
+                                            <h3 class="card-title"><a href="https://www.gamespot.com/articles/elden-ring-collectors-edition-confirmed-after-leak-comes-with-statue-soundtrack-and-artbook/1100-6497704/" target="blank" class="link-dark">Elden Ring Collector's Edition Confirmed After Leak, Comes With Soundtrack</a></h3>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- ROW -->
+                            </div> <!-- ITEM -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div> <!-- CAROUSEL -->
+            </div>
+        </div>
     </section>
-    <footer id="foot"><!-- Pie de pagina -->
+    <footer><!-- Pie de pagina -->
         <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />

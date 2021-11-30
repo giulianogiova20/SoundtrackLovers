@@ -46,38 +46,6 @@ ol {
   list-style-image: url(https://mdn.mozillademos.org/files/11981/starsolid.gif); }
 
 /*------------------------- TABLA-------------------- */
-form {
-  /* ------------FORMULARIO---------- */
-  font-size: 80%;
-  font-weight: bold;
-  color: white; }
-  form textarea {
-    font-family: 'Poppins', sans-serif;
-    font-size: 80%;
-    font-weight: bold;
-    margin-left: 10px; }
-  form input {
-    width: 50%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 90%;
-    font-weight: bold;
-    margin: 10px;
-    display: inline-block; }
-  form select {
-    font-family: 'Poppins', sans-serif;
-    font-size: 90%;
-    font-weight: bold;
-    margin: 10px; }
-  form h4 {
-    font-size: 16px; }
-    form h4 input {
-      width: 20px; }
-  form fieldset {
-    padding-left: 10px;
-    margin: 5px;
-    border: solid 1px white; }
-
-/* ------------FORMULARIO------------ */
 /* *******************************CLASES *******************************/
 .colorSubtitle {
   color: #ffffff; }
@@ -95,9 +63,6 @@ form {
 .greenText {
   color: greenyellow; }
 
-.textPadding {
-  padding-top: 30px; }
-
 .paddingL {
   margin-left: 5px; }
 
@@ -105,24 +70,6 @@ form {
   /* Texto QUOTE */
   width: 360px; }
 
-.textSize2 {
-  width: 360px; }
-
-/*---------- CAROUSEL -----------*/
-.carousel-pad {
-  padding-left: 90px; }
-
-.w-card {
-  width: 200px; }
-
-.h-card {
-  height: 280px; }
-
-.scale-card:hover {
-  transform: scale(1.01, 1.01);
-  /* SCALE */ }
-
-/*---------- CAROUSEL -----------*/
 header {
   background-color: #eeaf01;
   padding: 5px 60px; }
@@ -132,145 +79,48 @@ header {
 footer {
   text-align: center; }
 
-/* ################################ GRID ############################# */
-/* GRIDS por AREAS */
-.grid-areas {
-  /* INDEX */
-  display: grid;
-  grid-template-areas: "header" "quote" "FS" "YS" "news" "foot";
-  grid-template-rows: 0.3fr 0.8fr 1fr 1fr 1.8fr 0.1fr;
-  grid-template-columns: 414px; }
-
-/* Nombro las areas */
-header {
-  grid-area: header; }
-
-#quote {
-  grid-area: quote; }
-
-#FS {
-  grid-area: FS; }
-
-#YS {
-  grid-area: YS; }
-
-#news {
-  grid-area: news; }
-
-footer {
-  grid-area: foot; }
-
-.grid-areas2 {
-  display: grid;
-  grid-template-areas: "header" "aside" "bio"  "playlist" "next" "foot";
-  grid-template-rows: 1fr 0.5fr 2fr 2fr 1fr 0.3fr;
-  grid-template-columns: 414px; }
-
-.grid-areas3 {
-  /* MOVIES - SERIES */
-  display: grid;
-  grid-template-areas: "header" "aside" "bio"  "playlist" "gallery"  "next"  "foot";
-  grid-template-rows: 1fr 0.5fr 2fr 2fr 1.5fr 1fr 0.3fr;
-  grid-template-columns: 414px; }
-
-/* Nombro las areas */
-#aside {
-  grid-area: aside; }
-
-#bio {
-  grid-area: bio; }
-
-#playlist {
-  grid-area: playlist; }
-
-#next {
-  grid-area: next; }
-
-/* ############################ TABLET GRID ############################# */
-@media (min-width: 600px) and (max-width: 1024px) {
-  .grid-areas {
-    /* INDEX */
-    display: grid;
-    grid-template-areas: "header header" "quote quote" "FS YS" "news news" "foot foot";
-    grid-template-rows: 0.3fr 0.7fr 1.1fr 1fr 0.2fr;
-    grid-template-columns: 400px 400px; }
-  .grid-areas2 {
-    /* COMPOSERS - GAMES */
-    display: grid;
-    grid-template-areas: "header header" "aside bio" "aside playlist" "aside next"  "foot foot";
-    grid-template-rows: 0.4fr 2fr 2.5fr 0.7fr 0.3fr;
-    grid-template-columns: 150px 650px; }
-  .grid-areas3 {
-    /* MOVIES - SERIES */
-    display: grid;
-    grid-template-areas: "header header header" "aside bio bio" "aside playlist gallery" "aside next next"  "foot foot foot";
-    grid-template-rows: 0.4fr 2.3fr 2.5fr 0.7fr 0.3fr;
-    grid-template-columns: 150px 325px 325px; }
-  #gallery {
-    grid-area: gallery; } }
-
-/* ############################ DESKTOP GRID ############################# */
-@media (min-width: 1025px) {
-  .grid-areas {
-    /* INDEX */
-    display: grid;
-    grid-template-areas: "header header" "quote quote" "FS YS" "news news" "foot foot";
-    grid-template-rows: 0.4fr 1.7fr 3fr 1.8fr 0.5fr;
-    grid-template-columns: 680px 680px; }
-  .grid-areas2 {
-    /* COMPOSERS - GAMES */
-    display: grid;
-    grid-template-areas: "header header" "aside bio" "aside playlist" "aside next"  "foot foot";
-    grid-template-rows: 0.4fr 2fr 2.5fr 0.7fr 0.3fr;
-    grid-template-columns: 280px 1080px; }
-  .grid-areas3 {
-    /* MOVIES - SERIES */
-    display: grid;
-    grid-template-areas: "header header header" "aside bio bio" "aside playlist gallery" "aside next next"  "foot foot foot";
-    grid-template-rows: 0.4fr 2.5fr 2.5fr 0.7fr 0.3fr;
-    grid-template-columns: 240px 560px 560px; } }
-
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* ############################ MOBILE GRID ############################# */
+@media (max-width: 599px) {
+  h3 a {
+    font-size: 70%; }
+  .img-card-size {
+    width: 178px;
+    height: 100px; }
+  .w-card {
+    width: 180px; }
+  .h-card {
+    height: 320px; }
+  .carousel-control-prev {
+    transform: translate(-45px, 0);
+    position: absolute; }
+  .carousel-control-next {
+    transform: translate(30px, 0);
+    position: absolute; } }
+
 /* ############################ TABLET GRID ############################# */
 @media (min-width: 600px) and (max-width: 1024px) {
-  h5 {
-    font-size: 90%; }
-  /*------------------------- TABLA-------------------- */
-  table {
-    border-collapse: collapse;
-    background-color: #fbbd11;
-    width: 250px;
-    border: 3px solid gray;
-    margin: 10px 10px 10px 0px; }
-    table th {
-      width: 5%;
-      height: 15%;
-      padding: 5px 5px; }
-    table td {
-      width: 16%;
-      padding: 5px 10px; }
-  /*------------------------- TABLA-------------------- */
+  h3 a {
+    font-size: 68%; }
   .textSize {
     /* Texto QUOTE */
     width: 600px; }
-  .textSize2 {
-    width: 680px; }
-  .topMargin {
-    margin-top: 40px; }
-  .carousel-pad {
-    /* CAROUSEL */
-    padding-left: 90px; }
+  .img-card-size {
+    width: 198px;
+    height: 100px; }
   .w-card {
-    width: 220px; }
+    width: 200px; }
   .h-card {
-    height: 240px; } }
+    height: 300px; }
+  .carousel-control-prev {
+    transform: translate(-60px, 0);
+    position: absolute; }
+  .carousel-control-next {
+    transform: translate(60px, 0);
+    position: absolute; } }
 
 /* ############################ DESKTOP GRID ############################# */
 @media (min-width: 1025px) {
-  .posiTion {
-    /* POSICIONAR IMAGEN A LA DERECHA */
-    transform: translate(700px, -180px);
-    position: absolute; }
   section {
     padding: 20px 80px; }
   table {
@@ -282,48 +132,90 @@ footer {
     /* Texto QUOTE */
     width: 950px;
     font-size: 20px; }
-  .textSize2 {
-    width: 680px;
-    font-size: 20px; }
-  .topMargin {
-    margin-top: 40px; }
-  .carousel-pad {
-    /* CAROUSEL */
-    padding-left: 100px; }
+  h3 a {
+    font-size: 60%; }
+  .img-card-size {
+    width: 198px;
+    height: 100px; }
   .w-card {
     width: 200px; }
   .h-card {
-    height: 300px; }
+    height: 320px; }
   .carousel-control-prev {
-    transform: translate(-20px, 0);
+    transform: translate(-100px, 0);
     position: absolute; }
   .carousel-control-next {
-    transform: translate(60px, 0);
+    transform: translate(80px, 0);
     position: absolute; } }
 
-/* -----------------ANIMATION-------- */
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateX(-250px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
+/* CAROUSEL SCALE */
+.scale-card:hover {
+  transform: scale(1.01, 1.01);
+  /* SCALE */ }
+
+/* ----------------- */
+.text-in-img {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+.texto-encima {
+  position: absolute; }
 
 .animation-text {
-  animation-name: fadeInDown;
-  animation-iteration-count: initial;
-  animation-duration: 3s;
-  animation-delay: 0s; }
+  /* TEXT ANIMATION */
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
 
-@keyframes appear {
+@-webkit-keyframes text-focus-in {
   0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
     opacity: 0; }
   100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
     opacity: 1; } }
 
 .animation-img {
-  animation-name: appear;
-  animation-iteration-count: initial;
-  animation-duration: 6s;
-  animation-delay: 0s; }
+  /* IMG ANIMATION */
+  -webkit-animation: kenburns-top 2s ease-out both;
+  animation: kenburns-top 2s ease-out both; }
+
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; } }
+
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-30px);
+    transform: scale(1.25) translateY(-30px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; } }
