@@ -83,7 +83,8 @@ footer {
 @media (max-width: 599px) {
   .quote__text-size {
     /* Texto QUOTE */
-    padding-right: 40px; }
+    padding-right: 40px;
+    font-size: 10px; }
   .quote__lotr-size {
     width: 240px;
     height: 180px; }
