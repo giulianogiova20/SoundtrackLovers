@@ -17,12 +17,10 @@
         <h1 hidden>Series Soundtracks</h1>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                    <div class="d-flex flex-column flex-sm-row">
-                        <a class="nav-link active mb-1" href="../index.html"><img src="../images/logo.svg" alt="Logo"><p class="text-dark">Soundtrack Lovers</p></a>
-                        <button class="navbar-toggler navbar-dark bg-dark h-50 align-self-center mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
+                <a class="nav-link active mb-1" href="./index.html"><img src="../images/logo.svg" alt="Logo"><p class="text-dark">Soundtrack Lovers</p></a>
+                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon "></span>
+                </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="nav navbar-nav nav-pills  flex-md-row">
                         <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" aria-current="page" href="../index.html">Home</a></li>
@@ -37,8 +35,26 @@
     </header> 
     <section class="container">
         <div class="row">
-            <div class="col-3"><a href="">Selected Serie</a></div>
-            <!-- Se creara un boton hoverable que contendra los 10 albums mas famosos y su link a la bio -->
+            <div class="col-lg-3 mt-2 mb-4">
+                <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Serie  
+                    </button>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">Game Of Thrones</a></li>
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">The Simpsons</a></li>
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">Batman: Series</a></li>
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">Breaking Bad</a></li>
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">The Sopranos</a></li>
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">Mad Men</a></li>
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">The Americans</a></li>
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">Stranger Things</a></li>
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">Westworld</a></li>
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">Prison Break</a></li>
+                        <li class="selector-hv"><a href="./series.html" class="dropdown-item text-center text-warning">Fringe</a></li>
+                    </ul>
+              </div>
+            </div> 
             <div class="col-8">
                 <div class="my-4">
                     <h2 class="text-white">Making Of: Beetlejuice, Batman, The Simpsons & More</h2>
@@ -62,9 +78,9 @@
                 <div class="col-6">
                     <h2 class="text-white">Upcoming Serie Soundtracks</h2>
                         <ul class="text-white">
-                            <li><a href="">Serie I</a></li>
-                            <li><a href="">Serie II</a></li>
-                            <li><a href="">Serie III</a></li>
+                            <li class="project-item"><a href="">Serie I</a></li>
+                            <li class="project-item"><a href="">Serie II</a></li>
+                            <li class="project-item"><a href="">Serie III</a></li>
                         </ul>
                 </div>
             </div>

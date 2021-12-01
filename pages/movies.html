@@ -17,12 +17,10 @@
         <h1 hidden>Movie Soundtracks</h1>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                    <div class="d-flex flex-column flex-sm-row">
-                        <a class="nav-link active mb-1" href="../index.html"><img src="../images/logo.svg" alt="Logo"><p class="text-dark">Soundtrack Lovers</p></a>
-                        <button class="navbar-toggler navbar-dark bg-dark h-50 align-self-center mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
+                <a class="nav-link active mb-1" href="./index.html"><img src="../images/logo.svg" alt="Logo"><p class="text-dark">Soundtrack Lovers</p></a>
+                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon "></span>
+                </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="nav navbar-nav nav-pills  flex-md-row">
                         <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" aria-current="page" href="../index.html">Home</a></li>
@@ -37,10 +35,27 @@
     </header>
     <section class="container">
         <div class="row">
-            <div class="col-3"><a href="">Selected Movie</a>
-            </div>
-            <!-- Se creara un boton hoverable que contendra los 10 albums mas famosos y su link a la bio -->
-            <div class="col-8">
+            <div class="col-lg-3 mt-2 mb-4">
+                <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Movie  
+                    </button>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Interstellar</a></li>
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">The Godfather</a></li>
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Batman</a></li>
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Troy</a></li>
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Star Wars</a></li>
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Shawshank Redemption</a></li>
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Bourne Identity</a></li>
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Lion King</a></li>
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">The Lord Of The Rings</a></li>
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Inception</a></li>
+                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Jurassic Park</a></li>
+                    </ul>
+              </div>
+            </div>            
+            <div class="col-lg-8">
                 <div class="my-4">
                     <h2 class="text-white">Making Of: Interstellar</h2>
                     <iframe width="70%" height="100%" src="https://www.youtube.com/embed/f_NGSRXEx9E" title="YouTube video player" frameborderz="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -62,9 +77,9 @@
             <div class="col-6">
                 <h2 class="text-white">Upcoming Movie Soundtracks</h2>
                     <ul class="text-white">
-                        <li><a href="">Movie I</a></li>
-                        <li><a href="">Movie II</a></li>
-                        <li><a href="">Movie III</a></li>
+                        <li class="project-item"><a href="">Movie I</a></li>
+                        <li class="project-item"><a href="">Movie II</a></li>
+                        <li class="project-item"><a href="">Movie III</a></li>
                     </ul>
             </div>
         </div>

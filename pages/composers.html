@@ -17,12 +17,10 @@
         <h1 hidden>Soundtrack composers</h1>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                    <div class="d-flex flex-column flex-sm-row">
-                        <a class="nav-link active mb-1" href="../index.html"><img src="../images/logo.svg" alt="Logo"><p class="text-dark">Soundtrack Lovers</p></a>
-                        <button class="navbar-toggler navbar-dark bg-dark h-50 align-self-center mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
+                <a class="nav-link active mb-1" href="./index.html"><img src="../images/logo.svg" alt="Logo"><p class="text-dark">Soundtrack Lovers</p></a>
+                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon "></span>
+                </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="nav navbar-nav nav-pills  flex-md-row">
                         <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" aria-current="page" href="../index.html">Home</a></li>
@@ -37,19 +35,36 @@
     </header>
     <section class="container">
         <div class="row">
-            <div class="col-3"><a href="">Selected Composer</a>
+            <div class="col-lg-3 mt-2 mb-4">
+                <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Composer  
+                    </button>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">John Williams</a></li>
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">Hans Zimmer</a></li>
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">Djamin Rawadi</a></li>
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">Henry Mancini</a></li>
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">Max Steiner</a></li>
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">Danny Elfman</a></li>
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">Howard Shore</a></li>
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">James Horner</a></li>
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">Clint Mansell</a></li>
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">Michael Giacchino</a></li>
+                        <li class="selector-hv"><a href="./composers.html" class="dropdown-item text-center text-warning">Alan Silvestri</a></li>
+                    </ul>
+              </div>
             </div>
-            <div class="col-8">
-                <!-- Se creara un boton hoverable que contendra los 10 compositores mas famosos y su link a la bio -->
-                    <div class="my-2">
-                        <h2 class="text-white">BIO</h2>
-                            <h3 class="text-white">John Williams</h3>
-                            <p class="">As one of the best known, awarded, and financially successful composers in US history, John Williams is as easy to recall as John Philip Sousa, Aaron Copland or Leonard Bernstein, illustrating why he is "America's composer" time and again. With a massive list of awards that includes over 52 Oscar nominations (five wins), twenty-odd Gold and Platinum Records, and a slew of Emmy (two wins), Golden Globe (three wins), Grammy (25 wins), National Board of Review (including a Career Achievement Award), Saturn (six wins), American Film Institute (including a Lifetime Achievement Award) and BAFTA (seven wins) citations, along with honorary doctorate degrees numbering in the teens, Williams is undoubtedly one of the most respected composers for Cinema.</p>
-                    </div>
-                    <div class="my-2">
-                        <h2 class="text-white">Playlist</h2>
-                        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSQeR9oTmnyj" width="90%" height="380" frame="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                    </div>
+            <div class="col-lg-8">
+                <div class="my-2">
+                    <h2 class="text-white">BIO</h2>
+                        <h3 class="text-white">John Williams</h3>
+                        <p class="">As one of the best known, awarded, and financially successful composers in US history, John Williams is as easy to recall as John Philip Sousa, Aaron Copland or Leonard Bernstein, illustrating why he is "America's composer" time and again. With a massive list of awards that includes over 52 Oscar nominations (five wins), twenty-odd Gold and Platinum Records, and a slew of Emmy (two wins), Golden Globe (three wins), Grammy (25 wins), National Board of Review (including a Career Achievement Award), Saturn (six wins), American Film Institute (including a Lifetime Achievement Award) and BAFTA (seven wins) citations, along with honorary doctorate degrees numbering in the teens, Williams is undoubtedly one of the most respected composers for Cinema.</p>
+                </div>
+                <div class="my-2">
+                    <h2 class="text-white">Playlist</h2>
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSQeR9oTmnyj" width="90%" height="380" frame="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -58,9 +73,9 @@
             <div class="col-6">
                 <h2 class="text-white">NEXT PROJECTS</h2>
                     <ul class="text-white">
-                        <li><a href="">Project I</a></li>
-                        <li><a href="">Project II</a></li>
-                        <li><a href="">Project III</a></li>
+                        <li class="project-item"><a href="">Project I</a></li>
+                        <li class="project-item"><a href="">Project II</a></li>
+                        <li class="project-item"><a href="">Project III</a></li>
                     </ul>
             </div>
         </div>
