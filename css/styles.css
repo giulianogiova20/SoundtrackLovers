@@ -47,10 +47,6 @@ ol {
 .colorTabletitle {
   background-color: #aeb7b3; }
 
-.uPpercase {
-  /* Titulos en Mayuscualas */
-  text-transform: uppercase; }
-
 .redText {
   color: red; }
 
@@ -64,7 +60,7 @@ ol {
 .selector-hv a:active {
   background-color: gray !important; }
 
-.project-item a:hover {
+.card-link a:hover {
   color: white; }
 
 header {
@@ -95,9 +91,8 @@ footer {
   .news__card-img {
     width: 134px;
     height: 80px; }
-  .news__card-width {
-    width: 136px; }
-  .news__card-height {
+  .news__card-size {
+    width: 136px;
     height: 270px; } }
 
 /* ############################ TABLET GRID ############################# */
@@ -120,9 +115,8 @@ footer {
   .news__card-img {
     width: 154px;
     height: 80px; }
-  .news__card-width {
-    width: 156px; }
-  .news__card-height {
+  .news__card-size {
+    width: 156px;
     height: 280px; } }
 
 /* ############################ DESKTOP GRID ############################# */
@@ -141,16 +135,15 @@ footer {
     h3 a {
       font-size: 60%; }
   .news__card-img {
-    width: 170px;
-    height: 90px; }
-  .news__card-width {
-    width: 172px; }
-  .news__card-height {
+    width: 208px;
+    height: 120px; }
+  .news__card-size {
+    width: 210px;
     height: 280px; } }
 
 /* CAROUSEL SCALE */
 .scale-card:hover {
-  transform: scale(1.01, 1.01);
+  transform: scale(1.02, 1.02);
   /* SCALE */ }
 
 /* ----------------- */
