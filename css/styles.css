@@ -1,10 +1,15 @@
 /* LABELS */
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url("../images/what-the-hex-dark.png"); }
+  /*  background-image: url("../images/what-the-hex-dark.png"); */
+  background: #1d1d29;
+  overflow-x: hidden; }
+
+h1 {
+  font-size: 70px; }
 
 p {
-  color: #bebebe;
+  color: white;
   font-size: 80%;
   font-weight: bold;
   letter-spacing: 2px;
@@ -63,13 +68,59 @@ ol {
 .card-link a:hover {
   color: white; }
 
-header {
-  background-color: #eeaf01;
-  padding: 5px 40px; }
-  header nav {
+.section-wick {
+  width: 100vw;
+  background-size: contain;
+  margin: 0;
+  box-shadow: 30px white inset; }
+
+.section-avatar {
+  background-image: url("../images/avatar.jpg");
+  width: 100vw; }
+
+/* -------------COLORS-------- */
+.bg-magenta {
+  background-color: #ff1e95 !important; }
+
+.text-magenta {
+  color: #ff1e95; }
+
+.text-cyan {
+  color: #0dbfec; }
+
+.bg-cyan {
+  background-color: #0dbfec !important; }
+
+.text-magenta {
+  color: #ff1e95; }
+
+.text-cyan {
+  color: #0dbfec; }
+
+.header-home, .header-other {
+  padding: 5px 40px;
+  text-shadow: 1px 2px 3px black;
+  background-image: url("../images/blade_runner.jpg");
+  background-size: cover;
+  width: 100vw; }
+  .header-home nav, .header-other nav {
     font-weight: bold; }
-    header nav a:hover {
-      color: white !important; }
+    .header-home nav a:hover, .header-other nav a:hover {
+      color: #0dbfec !important; }
+
+.header-other {
+  background-image: url("../images/guardians.jpg");
+  background-position: center; }
+
+.dropdown-menu-center {
+  position: absolute; }
+
+.navbar-dark {
+  /* Bootstrap modificator */
+  color: white;
+  outline: white; }
+  .navbar-dark:hover {
+    color: #0dbfec; }
 
 footer {
   text-align: center; }
@@ -77,10 +128,15 @@ footer {
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /* ############################ MOBILE GRID ############################# */
 @media (max-width: 599px) {
+  .header-home, .header-other {
+    height: 650px; }
+  .header-other {
+    height: 500px; }
   .quote__text-size {
     /* Texto QUOTE */
-    padding-right: 40px;
-    font-size: 10px; }
+    margin: 0px 5%;
+    font-size: 13px;
+    padding-top: 1%; }
   .quote__lotr-size {
     width: 240px;
     height: 180px; }
@@ -93,13 +149,30 @@ footer {
     height: 80px; }
   .news__card-size {
     width: 136px;
-    height: 270px; } }
+    height: 270px; }
+  .news-card {
+    width: 433px; }
+  .news-content {
+    bottom: 15px;
+    right: 300px;
+    left: 300px;
+    width: 300px;
+    text-align: center; }
+  .news-date {
+    right: 320px;
+    left: 320px; } }
 
 /* ############################ TABLET GRID ############################# */
-@media (min-width: 600px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1024px) {
+  .header-home, .header-other {
+    height: 600px; }
+  .header-other {
+    height: 400px; }
   .quote__text-size {
     /* Texto QUOTE */
-    padding-right: 80px; }
+    margin: 0px 10%;
+    font-size: 15px;
+    padding-top: 5%; }
   .quote__lotr-size {
     width: 320px;
     height: 220px; }
@@ -117,14 +190,28 @@ footer {
     height: 80px; }
   .news__card-size {
     width: 156px;
-    height: 280px; } }
+    height: 280px; }
+  .news-card {
+    max-width: 900px; }
+  .news-content {
+    width: 600px;
+    bottom: 15px;
+    right: 0px;
+    padding-left: 60px; }
+  .news-date {
+    align-items: center; } }
 
 /* ############################ DESKTOP GRID ############################# */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
+  .header-home, .header-other {
+    height: 800px; }
+  .header-other {
+    height: 600px; }
   .quote__text-size {
     /* Texto QUOTE */
-    padding-right: 100px;
-    font-size: 20px; }
+    font-size: 22px;
+    margin: 0px 20%;
+    padding-top: 5%; }
   table {
     border-collapse: collapse;
     background-color: #fbbd11;
@@ -139,7 +226,14 @@ footer {
     height: 120px; }
   .news__card-size {
     width: 210px;
-    height: 280px; } }
+    height: 280px; }
+  .news-card {
+    width: 80%; }
+  .news-content {
+    bottom: 15px;
+    right: 0px; }
+  .news-date {
+    left: 60px; } }
 
 /* CAROUSEL SCALE */
 .scale-card:hover {
@@ -147,13 +241,9 @@ footer {
   /* SCALE */ }
 
 /* ----------------- */
-.text-in-img {
-  position: relative;
-  display: block;
-  text-align: center; }
-
 .texto-encima {
-  position: absolute; }
+  position: absolute;
+  text-align: center; }
 
 .animation-text {
   /* TEXT ANIMATION */
@@ -182,33 +272,142 @@ footer {
 
 .animation-img {
   /* IMG ANIMATION */
-  -webkit-animation: kenburns-top 2s ease-out both;
-  animation: kenburns-top 2s ease-out both; }
+  -webkit-animation: kenburns-top 5s ease-out both;
+  animation: kenburns-top 5s ease-out both; }
 
 @-webkit-keyframes kenburns-top {
   0% {
     -webkit-transform: scale(1) translateY(0);
     transform: scale(1) translateY(0);
     -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%;
-    opacity: 1; }
+    transform-origin: 50% 16%; }
   100% {
     -webkit-transform: scale(1.25) translateY(-15px);
     transform: scale(1.25) translateY(-15px);
     -webkit-transform-origin: top;
-    transform-origin: top;
-    opacity: 0; } }
+    transform-origin: top; } }
 
 @keyframes kenburns-top {
   0% {
     -webkit-transform: scale(1) translateY(0);
     transform: scale(1) translateY(0);
     -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%;
-    opacity: 1; }
+    transform-origin: 50% 16%; }
   100% {
-    -webkit-transform: scale(1.25) translateY(-30px);
-    transform: scale(1.25) translateY(-30px);
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
     -webkit-transform-origin: top;
-    transform-origin: top;
-    opacity: 0; } }
+    transform-origin: top; } }
+
+.main-header {
+  color: lawngreen;
+  display: block;
+  margin-top: 50px;
+  margin-left: 50px; }
+
+.movie-list {
+  margin: 30px 0;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll; }
+
+.movie-list::-webkit-scrollbar {
+  width: 15px;
+  height: 10px; }
+
+.movie-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+.movie-list::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d;
+  outline: 1px solid slategrey;
+  border-radius: 50px; }
+
+.movie-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 182px;
+  box-shadow: 0px 5px 10px #111111;
+  cursor: pointer;
+  margin: 20px 15px;
+  position: relative;
+  transition: all 1s; }
+
+.movie-card:hover {
+  box-shadow: 0px 10px 20px #000000;
+  transform: scale(1.08); }
+
+.movie-poster {
+  border-radius: 10px 10px 0px 0px; }
+
+.movie-info {
+  padding: 15px 10px; }
+
+.movie-title {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 42px;
+  text-align: center; }
+
+.btn-watch {
+  font-weight: 700;
+  background-color: #ff1e95;
+  padding: 8px 36px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px; }
+
+/*----------------------------------
+-------- news AREA CSS START -------
+------------------------------------*/
+.news-content {
+  position: absolute;
+  width: 80%;
+  left: 60px;
+  bottom: 35px;
+  right: 400px;
+  text-shadow: 1px 2px 2px black; }
+  .news-content a:hover {
+    color: #ff1e95; }
+
+.news-bg {
+  height: 350px;
+  padding: 5px; }
+
+.news-date {
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  background: -moz-linear-gradient(-45deg, #0dbfec 0%, #0dbfec 34%, #ff1e95 64%, #ff1e95 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #0dbfec 0%, #0dbfec 34%, #ff1e95 64%, #ff1e95 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #0dbfec 0%, #0dbfec 34%, #ff1e95 64%, #ff1e95 100%);
+  padding: 20px;
+  color: white; }
+  .news-date h3 {
+    font-size: 50px;
+    text-align: center; }
+
+.news-slide-area {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; }
+
+.news-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 900px;
+  box-shadow: 0px 5px 10px #111111;
+  cursor: pointer;
+  margin: 20px 15px;
+  position: relative;
+  transition: all 1s; }
+
+/*----------------------------------
+--------- news AREA CSS END --------
+-----------------------------------*/

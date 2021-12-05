@@ -11,93 +11,339 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-        <!--Flickity-->
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <!-- JavaScript -->
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="./css/owlcarousel.css">
+    <!--FLICKITY-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 
 </head>
 <body> <!-- Cuerpo -->
-    <header>
+    <header class="header-home">
         <h1 hidden>Soundtracks</h1>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                        <a class="nav-link active mb-1" href="./index.html"><img src="./images/logo.svg" alt="Logo"><p class="text-dark">Soundtrack Lovers</p></a>
-                        <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon "></span>
-                        </button>
+                    <div class="justify-content-start"><a class="nav-link active mb-1" href="./index.html"><img src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/50/ffffff/external-headphone-stay-home-vitaliy-gorbachev-fill-vitaly-gorbachev.png"/></a><p class="text-white">Soundtrack Lovers</p></a></div>
+                    <button class="navbar-toggler navbar-dark btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav nav-pills  flex-md-row">
-                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link active bg-dark" aria-current="page" href="index.html">Home</a></li>
-                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" href="pages/composers.html">Composers</a></li>
-                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" href="pages/movies.html">Movies</a></li>
-                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" href="pages/series.html">Series</a></li>
-                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" href="pages/games.html">Games</a></li>
+                    <ul class="nav navbar-nav nav-pills flex-md-row">
+                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link active bg-magenta" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-white" href="pages/composers.html">Composers</a></li>
+                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-white" href="pages/movies.html">Movies</a></li>
+                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-white" href="pages/series.html">Series</a></li>
+                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-white" href="pages/games.html">Games</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+    <section class="container my-4">
+        <div class="row ">
+            <div class="d-flex justify-content-center">
+                <p class="quote__text-size animation-text texto-encima text-background">Soundtracks are such a vital part when creating and watching a movie, it helps the director set the tone of a scene, and helps the audience member empathise with a character. <br> What would <span class="text-cyan">Blade Runner</span> or <span class="text-cyan">John Wick</span> be without their soundtracks? Let’s just say most of the emotion would go down the drain pretty quickly without the music. In this site, you'll be able to see why we love Soundtracks so much and we hope you to join us!.</p>
+            </div>
+        </div>
+    </section>
     </header>
-    <section class="container text-in-img my-4">
-        <div class="row justify-content-center">
-            <div class="col-11 col-sm-10 col-md-9">
-                <p class="quote__text-size animation-text texto-encima centrado">Soundtracks are such a vital part when creating and watching a movie, it helps the director set the tone of a scene, and helps the audience member empathise with a character. <br> What would <span class="text-warning">The Lord of the Rings</span> or <span class="text-warning">Lion King</span> be without their soundtracks? Let’s just say most of the emotion would go down the drain pretty quickly without the music. In this site, you'll be able to see why we love Soundtracks so much and we hope you to join us!.</p>
-                <img src="./images/lotr.png" alt="Lord Of The Rings" class="animation-img quote__lotr-size">
-            </div>
-        </div>
-    </section>
-    <section class="container mt-5 mb-2">
-        <div class="row justify-content-center">
-            <div class="col-11 col-sm-10 col-lg-6">
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
                 <h2 class="text-white">Fan's Selection</h2><!-- FAN'S SELECTION -->
-                <table>
-                    <tr class="colorTabletitle">
-                        <th>Genre</th>
-                        <th>Composer</th>
-                        <th>Top Album</th>
-                        <th>Top 3 Song's</th>
-                    </tr>
-                    <tr>
-                        <th>Movies</th>
-                        <td>Hans Zimmer</td>
-                        <td>Inception</td>
-                        <td>
-                            <ol>
-                                <li>Time</li>
-                                <li>Dream Is Collapsing</li>
-                                <li>Dream Within A Dream</li>
-                            </ol>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Series</th>
-                        <td>Ramin Djawadi</td>
-                        <td>Game Of Thrones: Season 8</td>
-                        <td>
-                            <ol>
-                                <li>Main Titles</li>
-                                <li>Light Of The Seven</li>
-                                <li>Dracarys</li>
-                            </ol>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Games</span></th>
-                        <td>Martin O'Donnell/<br>Salvatori</td>
-                        <td>Halo: Combat Evolved</td>
-                        <td>
-                            <ol>
-                                <li>Halo</li>
-                                <li>Brothers In Arms</li>
-                                <li>Opening Suite</li>
-                            </ol>
-                        </td>
-                    </tr>
-                </table>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active text-cyan" id="nav-movies-tab" data-bs-toggle="tab" data-bs-target="#nav-movies" type="button" role="tab" aria-controls="nav-movies" aria-selected="true">Movies</button>
+                      <button class="nav-link text-cyan" id="nav-series-tab" data-bs-toggle="tab" data-bs-target="#nav-series" type="button" role="tab" aria-controls="nav-series" aria-selected="false">Series</button>
+                      <button class="nav-link text-cyan" id="nav-games-tab" data-bs-toggle="tab" data-bs-target="#nav-games" type="button" role="tab" aria-controls="nav-games" aria-selected="false">Games</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-movies" role="tabpanel" aria-labelledby="nav-movies-tab">
+                            <div class="movie-list">
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BMWM5YzhmNGMtZTI4Ny00MGM4LThkYjAtMDIyMTEwNTQyZmQ1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">I am not okay with this</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BMjEzMjcxNjA2Nl5BMl5BanBnXkFtZTgwMjAxMDM2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Booksmart</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BZGVmY2RjNDgtMTc3Yy00YmY0LTgwODItYzBjNWJhNTRlYjdkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Marriage Story</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UY268_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">The Irishman</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/MPW-125776_500x749.jpg?v=1573851773" height="270" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Star Wars: The Rise Of Skywalker</h3>
+                                        <a href="pages/composers.html"><button class="btn-watch">Composer</button></a>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Joker</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Avengers: Endgame</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Knives Out</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Parasite</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Once Upon a Time... in Hollywood</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BY2QzYTQyYzItMzAwYi00YjZlLThjNTUtNzMyMDdkYzJiNWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Little Women</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BOGE4MmVjMDgtMzIzYy00NjEwLWJlODMtMDI1MGY2ZDlhMzE2XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">The Witcher</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BMjA0YjYyZGMtN2U0Ni00YmY4LWJkZTItYTMyMjY3NGYyMTJkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Frozen II</h3>
+                                        <button class="btn-watch">Composer</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-series" role="tabpanel" aria-labelledby="nav-series-tab">
+                        <div class="movie-list">
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMWM5YzhmNGMtZTI4Ny00MGM4LThkYjAtMDIyMTEwNTQyZmQ1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">I am not okay with this</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMjEzMjcxNjA2Nl5BMl5BanBnXkFtZTgwMjAxMDM2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Booksmart</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BZGVmY2RjNDgtMTc3Yy00YmY0LTgwODItYzBjNWJhNTRlYjdkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Marriage Story</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UY268_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">The Irishman</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMTQxMTgyNDc5M15BMl5BanBnXkFtZTcwMzk4OTM5Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">The Company Men</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Joker</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Avengers: Endgame</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Knives Out</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Parasite</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Once Upon a Time... in Hollywood</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BY2QzYTQyYzItMzAwYi00YjZlLThjNTUtNzMyMDdkYzJiNWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Little Women</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BOGE4MmVjMDgtMzIzYy00NjEwLWJlODMtMDI1MGY2ZDlhMzE2XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">The Witcher</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMjA0YjYyZGMtN2U0Ni00YmY4LWJkZTItYTMyMjY3NGYyMTJkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Frozen II</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-games" role="tabpanel" aria-labelledby="nav-games-tab">
+                        <div class="movie-list">
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMWM5YzhmNGMtZTI4Ny00MGM4LThkYjAtMDIyMTEwNTQyZmQ1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">I am not okay with this</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMjEzMjcxNjA2Nl5BMl5BanBnXkFtZTgwMjAxMDM2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Booksmart</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BZGVmY2RjNDgtMTc3Yy00YmY0LTgwODItYzBjNWJhNTRlYjdkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Marriage Story</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UY268_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">The Irishman</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMTQxMTgyNDc5M15BMl5BanBnXkFtZTcwMzk4OTM5Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">The Company Men</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Joker</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Avengers: Endgame</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Knives Out</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Parasite</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Once Upon a Time... in Hollywood</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BY2QzYTQyYzItMzAwYi00YjZlLThjNTUtNzMyMDdkYzJiNWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Little Women</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                            <div class="movie-card">
+                                <img src="https://m.media-amazon.com/images/M/MV5BOGE4MmVjMDgtMzIzYy00NjEwLWJlODMtMDI1MGY2ZDlhMzE2XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">The Witcher</h3>
+                                    <button class="btn-watch">Composer</button>
+                                </div>
+                            </div>
+                    </div>
+                  </div>
             </div>
-        </div>
+        </div>               
     </section>
+    </section>
+        <div class="row">
+                <div class="col-12 "><img class="section-wick" src="./images/john_wick.jpg" alt="John Wick"></div>
+        </div>
     <section class="container">
         <div class="row justify-content-center">
             <div class="col-11 col-sm-10 col-lg-6">
@@ -119,7 +365,7 @@
                 </div>
                 <div class="mb-2 form-check">
                     <label class="form-check-label text-white" for="exampleCheck1">Do you want to subscribe to newsletter?</label>
-                    <input type="checkbox" class="form-check-input bg-warning" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input bg-magenta" id="exampleCheck1">
                 </div>
                 <hr class="bg-white"/>
                 <div class="mb-2">
@@ -134,7 +380,7 @@
                     <label for="exampleFormControlTextarea1" class="form-label text-white">Tell us your favourite song or album from the selected genre:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                <button type="submit" class="btn btn-warning">Submit</button>
+                <button type="submit" class="btn bg-magenta">Submit</button>
                 </form>
             </div>
         </div>
@@ -142,72 +388,128 @@
     <section class="container my-4">
         <h2 class="text-white ms-4">LATEST NEWS</h2>
         <!-- Flickity HTML init -->
-    <div class="carousel" data-flickity='{ "groupCells": true }'>
-        <div class="carousel-cell mx-1">                                        
-            <div class="card news__card-size scale-card my-2">
-                <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2021/09/Forza-Horizon-5--Every-Car-Confirmed-So-Far.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5" class="news__card-img" alt="Forza Horizon">
-                <div class="card-body bg-warning">
-                <h3 class="card-title card-link"><a href="https://screenrant.com/forza-horizon-5-game-soundtrack-reveal/" target="blank" class="link-dark">Forza Horizon 5's Full Soundtrack Revealed After Game Goes Gold</a>                                  </h3>
+        <div class="carousel" data-flickity='{ "groupCells": true }'>
+            <div class="news-card">
+                <div class="news-slide-area">
+                    <div class="news-bg">
+                        <img src="./images/news/forza.jpg" alt="Forza Horizon">
+                    </div>
+                    <div class="news-date">
+                        <h3>NOV 25<br>2017</h3>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="text-magenta">Forza Horizon 5</h3>
+                        <p>Forza Horizon 5's Full Soundtrack Revealed After Game Goes Gold</p>
+                        <a href="https://screenrant.com/forza-horizon-5-game-soundtrack-reveal/" target="blank" class="text-cyan">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="carousel-cell mx-1">                                        
-            <div class="card news__card-size scale-card my-2">
-                <img src="https://i.blogs.es/78ee7e/x83rf1n/1366_2000.jpg" class="news__card-img" alt="Spencer">
-                <div class="card-body bg-warning">
-                <h3 class="card-title card-link"><a href="https://thequietus.com/articles/30694-jonny-greenwood-new-soundtrack-work-spencer-film" target="blank" class="link-dark">Jonny Greenwood Details 'Spencer' Soundtrack</a></h3>
+            <div class="news-card">
+                <div class="news-slide-area">
+                    <div class="news-bg">
+                        <img src="https://i.blogs.es/78ee7e/x83rf1n/1366_2000.jpg" alt="Spencer">
+                    </div>
+                    <div class="news-date">
+                        <h3>NOV 25<br>2017</h3>
+                    </div>
+                    <div class="news-content">
+                        <h3>The Witch Queen</h3>
+                        <p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+                    <a href="#">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="carousel-cell mx-1">                                        
-            <div class="card news__card-size scale-card my-2">
-                <img src="https://9to5fortnite.com/wp-content/uploads/2021/09/venom-2-eminem.jpg" class="news__card-img" alt="Venom-Eminem">
-                <div class="card-body bg-warning">
-                <h3 class="card-title card-link"><a href="https://www.detroitnews.com/story/entertainment/2021/09/28/eminem-teases-appearance-venom-sequels-soundtrack/5908803001/" target="blank" class="link-dark">Eminem teases appearance on 'Venom' sequel's soundtrack</a></h3>
+            <div class="news-card">
+                <div class="news-slide-area">
+                    <div class="news-bg">
+                        <img src="https://9to5fortnite.com/wp-content/uploads/2021/09/venom-2-eminem.jpg" alt="Eminem">
+                    </div>
+                    <div class="news-date">
+                        <h3>NOV 25<br>2017</h3>
+                    </div>
+                    <div class="news-content">
+                        <h2>The Witch Queen</h2>
+                        <p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+                    <a href="#">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="carousel-cell mx-1">                                        
-            <div class="card news__card-size scale-card my-2">
-                <img src="https://www.egames.news/__export/1635627941505/sites/debate/img/2021/10/29/doom_lightyear.jpg_172596871.jpg" class="news__card-img" alt="BUZZ">
-                <div class="card-body bg-warning">
-                    <h3 class="card-title card-link"><a href="https://www.egames.news/entretenimiento/Ponen-el-soundtrack-de-Doom-en-el-trailer-de-Lightyear-y-combina-perfecto-20211029-0007.html" target="blank" class="link-dark">Doom's Soundtrack on Lightyear's trailer combines awesome</a></h3>
+            <div class="news-card">
+                <div class="news-slide-area">
+                    <div class="news-bg">
+                        <img src="https://www.egames.news/__export/1635627941505/sites/debate/img/2021/10/29/doom_lightyear.jpg_172596871.jpg" alt="Doom">
+                    </div>
+                    <div class="news-date">
+                        <h3>NOV 25<br>2017</h3>
+                    </div>
+                    <div class="news-content">
+                        <h2>The Witch Queen</h2>
+                        <p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+                    <a href="#">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="carousel-cell mx-1">                                        
-            <div class="card news__card-size scale-card my-2">
-                <img src="https://www.fanbolt.com/storage/2021/11/Netflix-Bruised-800x500.jpg" class="news__card-img"  alt="Bruised">
-                <div class="card-body bg-warning">
-                <h3 class="card-title"><a href="https://americansongwriter.com/all-female-soundtrack-for-new-halle-berry-film-bruised-features-h-e-r-cardi-b-saweetie-and-more/" target="blank" class="link-dark">‘Bruised’ Features H.E.R., Cardi B, Saweetie, and More</a></h3>
+            <div class="news-card">
+                <div class="news-slide-area">
+                    <div class="news-bg">
+                        <img src="https://www.fanbolt.com/storage/2021/11/Netflix-Bruised-800x500.jpg" alt="Bruised">
+                    </div>
+                    <div class="news-date">
+                        <h3>NOV 25<br>2017</h3>
+                    </div>
+                    <div class="news-content">
+                        <h3>The Witch Queen</h3>
+                        <p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+                    <a href="#">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="carousel-cell mx-1">                                        
-            <div class="card news__card-size scale-card my-2">
-                <img src="https://www.udiscovermusic.com/wp-content/uploads/2021/11/MicrosoftTeams-image-11.jpg" class="news__card-img" alt="Sing 2">
-                <div class="card-body bg-warning">
-                <h3 class="card-title card-link"><a href="https://www.udiscovermusic.com/news/sing-2-soundtrack-december-release/" target="blank" class="link-dark">‘Sing 2’ Original Motion Picture Soundtrack Set For December Release</a></h3>
+            <div class="news-card">
+                <div class="news-slide-area">
+                    <div class="news-bg">
+                        <img src="https://www.fanbolt.com/storage/2021/11/Netflix-Bruised-800x500.jpg" alt="Bruised">
+                    </div>
+                    <div class="news-date">
+                        <h3>NOV 25<br>2017</h3>
+                    </div>
+                    <div class="news-content">
+                        <h3>The Witch Queen</h3>
+                        <p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+                    <a href="#">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="carousel-cell mx-1">                                        
-            <div class="card news__card-size scale-card my-2">
-                <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/08/Blade-Runner-Black-Lotus.jpg" class="news__card-img" alt="Black Lotus">
-                <div class="card-body bg-warning">
-                <h3 class="card-title card-link"><a href="https://www.udiscovermusic.com/news/blade-runner-black-lotus-soundtrack-x-ambassadors-alessia-cara/" target="blank" class="link-dark">Alessia Cara And More Featured On ‘Blade Runner: Black Lotus’ Soundtrack</a></h3>
+            <div class="news-card">
+                <div class="news-slide-area">
+                    <div class="news-bg">
+                        <img src="https://www.udiscovermusic.com/wp-content/uploads/2021/11/MicrosoftTeams-image-11.jpg" alt="Sing 2">
+                    </div>
+                    <div class="news-date">
+                        <h3>NOV 25<br>2017</h3>
+                    </div>
+                    <div class="news-content">
+                        <h3>The Witch Queen</h3>
+                        <p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+                    <a href="#">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="carousel-cell mx-1">                                       
-             <div class="card news__card-size scale-card my-2">
-                <img src="https://www.gamespot.com/a/uploads/original/43/434805/3872478-eldenring_21.jpg" class="news__card-img" alt="Elden Ring">
-                <div class="card-body bg-warning">
-                    <h3 class="card-title card-link"><a href="https://www.gamespot.com/articles/elden-ring-collectors-edition-confirmed-after-leak-comes-with-statue-soundtrack-and-artbook/1100-6497704/" target="blank" class="link-dark">Elden Ring Collector's Edition Confirmed After Leak, Comes With Soundtrack</a></h3>
+            <div class="news-card">
+                <div class="news-slide-area">
+                    <div class="news-bg">
+                        <img src="https://www.gamespot.com/a/uploads/original/43/434805/3872478-eldenring_21.jpg" alt="Elder Scrols">
+                    </div>
+                    <div class="news-date">
+                        <h3>NOV 25<br>2017</h3>
+                    </div>
+                    <div class="news-content">
+                        <h2>The Witch Queen</h2>
+                        <p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+                    <a href="#">Read More</a>
+                    </div>
                 </div>
+            </div>  
             </div>
-        </div>
-        </div>
     </section>
     <footer><!-- Pie de pagina -->
         <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -228,5 +530,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./js/fans.js"></script>
+        <!-- owl carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
 </body>
 </html>
