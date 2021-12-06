@@ -6,7 +6,7 @@ body {
   overflow-x: hidden; }
 
 h1 {
-  font-size: 70px; }
+  font-size: 60px; }
 
 p {
   color: white;
@@ -49,6 +49,25 @@ ol {
 
 /*------------------------- TABLA-------------------- */
 /* *******************************CLASES *******************************/
+/* -------------COLORS-------- */
+.bg-magenta {
+  background-color: #ff1e95 !important; }
+
+.text-magenta {
+  color: #ff1e95; }
+
+.text-cyan {
+  color: #0dbfec; }
+
+.bg-cyan {
+  background-color: #0dbfec !important; }
+
+.text-magenta {
+  color: #ff1e95; }
+
+.text-cyan {
+  color: #0dbfec; }
+
 .colorTabletitle {
   background-color: #aeb7b3; }
 
@@ -70,38 +89,25 @@ ol {
 
 .section-wick {
   width: 100vw;
-  background-size: contain;
+  background-size: cover;
   margin: 0;
   box-shadow: 30px white inset; }
 
-.section-avatar {
-  background-image: url("../images/avatar.jpg");
-  width: 100vw; }
-
-/* -------------COLORS-------- */
-.bg-magenta {
-  background-color: #ff1e95 !important; }
-
-.text-magenta {
-  color: #ff1e95; }
-
-.text-cyan {
-  color: #0dbfec; }
-
-.bg-cyan {
-  background-color: #0dbfec !important; }
-
-.text-magenta {
-  color: #ff1e95; }
-
-.text-cyan {
-  color: #0dbfec; }
+.project-item {
+  list-style: url("../images/project-icon.png"); }
+  .project-item a {
+    display: table-cell;
+    vertical-align: middle;
+    color: #0dbfec; }
+    .project-item a:hover {
+      color: #ff1e95; }
 
 .header-home, .header-other {
   padding: 5px 40px;
   text-shadow: 1px 2px 3px black;
-  background-image: url("../images/blade_runner.jpg");
+  background-image: url("../images/jedi_order.jpg");
   background-size: cover;
+  background-position: center;
   width: 100vw; }
   .header-home nav, .header-other nav {
     font-weight: bold; }
@@ -109,8 +115,8 @@ ol {
       color: #0dbfec !important; }
 
 .header-other {
-  background-image: url("../images/guardians.jpg");
-  background-position: center; }
+  background-image: url("../images/blade_runner.jpg");
+  background-position: left; }
 
 .dropdown-menu-center {
   position: absolute; }
@@ -123,7 +129,14 @@ ol {
     color: #0dbfec; }
 
 footer {
-  text-align: center; }
+  width: 100vw;
+  height: 199px;
+  padding-top: 50px;
+  text-align: center;
+  background-image: url("../images/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 5px 3px black; }
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /* ############################ MOBILE GRID ############################# */
@@ -132,108 +145,181 @@ footer {
     height: 650px; }
   .header-other {
     height: 500px; }
-  .quote__text-size {
-    /* Texto QUOTE */
-    margin: 0px 5%;
-    font-size: 13px;
-    padding-top: 1%; }
-  .quote__lotr-size {
-    width: 240px;
-    height: 180px; }
+  .quote {
+    /* QUOTE SECTION */ }
+    .quote__text-size {
+      margin: 0px 5%;
+      font-size: 13px;
+      padding-top: 1%; }
+    .quote__lotr-size {
+      width: 240px;
+      height: 180px; }
   h3 {
     line-height: 0.8; }
     h3 a {
       font-size: 60%; }
-  .news__card-img {
-    width: 134px;
-    height: 80px; }
-  .news__card-size {
-    width: 136px;
-    height: 270px; }
-  .news-card {
-    width: 433px; }
-  .news-content {
-    bottom: 15px;
-    right: 300px;
-    left: 300px;
-    width: 300px;
-    text-align: center; }
-  .news-date {
-    right: 320px;
-    left: 320px; } }
+  .news {
+    /* NEWS SECTION */ }
+    .news__card {
+      width: 500px; }
+    .news__content {
+      width: 250px;
+      bottom: 15px;
+      right: 300px;
+      left: 320px;
+      text-align: left; }
+      .news__content h4 {
+        width: 300px; }
+    .news__date {
+      right: 320px;
+      left: 320px; }
+  .composer {
+    /* COMPOSERS SECTION */ }
+    .composer__card {
+      height: auto;
+      margin: 50px auto;
+      min-height: 350px; }
+    .composer__header {
+      margin: 230px 80px 10px 80px; }
+    .composer__info-section {
+      background: linear-gradient(to top, #141413 50%, transparent 100%); }
+  .blur_back {
+    width: 100%;
+    background-position: 50% 50% !important; } }
 
-/* ############################ TABLET GRID ############################# */
-@media (min-width: 600px) and (max-width: 1024px) {
+/* ############################ TABLET GRID V1############################# */
+@media (min-width: 600px) and (max-width: 768px) {
   .header-home, .header-other {
-    height: 600px; }
+    height: 650px; }
   .header-other {
-    height: 400px; }
-  .quote__text-size {
-    /* Texto QUOTE */
-    margin: 0px 10%;
-    font-size: 15px;
-    padding-top: 5%; }
-  .quote__lotr-size {
-    width: 320px;
-    height: 220px; }
-  table {
-    border-collapse: collapse;
-    background-color: #fbbd11;
-    width: 500px;
-    border: 3px solid gray; }
+    height: 500px; }
+  .quote {
+    /* QUOTE SECTION */ }
+    .quote__text-size {
+      margin: 0px 10%;
+      font-size: 15px; }
+    .quote__lotr-size {
+      width: 320px;
+      height: 220px; }
   h3 {
     line-height: 0.8; }
     h3 a {
       font-size: 65%; }
-  .news__card-img {
-    width: 154px;
-    height: 80px; }
-  .news__card-size {
-    width: 156px;
-    height: 280px; }
-  .news-card {
-    max-width: 900px; }
-  .news-content {
-    width: 600px;
-    bottom: 15px;
-    right: 0px;
-    padding-left: 60px; }
-  .news-date {
-    align-items: center; } }
+  .news {
+    /* NEWS SECTION */ }
+    .news__card {
+      max-width: 900px; }
+    .news__content {
+      width: 250px;
+      bottom: 15px;
+      right: 300px;
+      left: 230px;
+      text-align: left; }
+      .news__content h4 {
+        width: 450px; }
+    .news__date {
+      left: 230px; }
+  .composer {
+    /* COMPOSERS SECTION */ }
+    .composer__card {
+      height: auto;
+      margin: 70px auto;
+      min-height: 350px; }
+    .composer__header {
+      width: 40%;
+      margin: 120px 0px 0px 100px; }
+    .composer__info-section {
+      background: linear-gradient(to top, #141413 50%, transparent 100%); }
+  .blur_back {
+    width: 100%; } }
+
+/* ############################ TABLET GRID V2############################# */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header-home, .header-other {
+    height: 500px; }
+  .header-other {
+    height: 400px; }
+  .quote {
+    /* QUOTE SECTION */ }
+    .quote__text-size {
+      margin: 0px 10%;
+      font-size: 15px; }
+    .quote__lotr-size {
+      width: 320px;
+      height: 220px; }
+  .news {
+    /* NEWS SECTION */ }
+    .news__card {
+      max-width: 900px; }
+    .news__content {
+      width: 400px;
+      bottom: 15px;
+      right: 300px;
+      left: 150px;
+      text-align: left; }
+      .news__content h4 {
+        width: 560px; }
+    .news__date {
+      left: 150px; }
+  .composer {
+    /* COMPOSERS SECTION */ }
+    .composer__card {
+      height: auto;
+      margin: 20px 0px 60px 0px;
+      min-height: 350px; }
+    .composer__header {
+      width: 40%;
+      margin: 120px 0px 0px 100px; }
+    .composer__info-section {
+      background: linear-gradient(to top, #141413 50%, transparent 100%); }
+  .blur_back {
+    width: 100%; } }
 
 /* ############################ DESKTOP GRID ############################# */
 @media (min-width: 1025px) {
-  .header-home, .header-other {
-    height: 800px; }
-  .header-other {
-    height: 600px; }
-  .quote__text-size {
-    /* Texto QUOTE */
-    font-size: 22px;
-    margin: 0px 20%;
-    padding-top: 5%; }
-  table {
-    border-collapse: collapse;
-    background-color: #fbbd11;
-    width: 550px;
-    border: 3px solid gray; }
+  .header {
+    padding: 25px; }
+    .header-home, .header-other {
+      height: 800px; }
+    .header-other {
+      height: 600px; }
+  h1 {
+    padding-top: 100px; }
+  .quote {
+    /* QUOTE SECTION */ }
+    .quote__text-size {
+      font-size: 22px;
+      margin: 0px 20%;
+      padding-top: 5%; }
   h3 {
     line-height: 0.8; }
     h3 a {
       font-size: 60%; }
-  .news__card-img {
-    width: 208px;
-    height: 120px; }
-  .news__card-size {
-    width: 210px;
-    height: 280px; }
-  .news-card {
-    width: 80%; }
-  .news-content {
-    bottom: 15px;
-    right: 0px; }
-  .news-date {
-    left: 60px; } }
+  .news {
+    /* NEWS SECTION */ }
+    .news__content {
+      width: 250px;
+      bottom: 15px;
+      right: 20px;
+      left: 60px;
+      text-align: left; }
+      .news__content h4 {
+        width: 750px; }
+    .news__date {
+      left: 60px; }
+  .composer {
+    /* COMPOSERS SECTION */ }
+    .composer__card {
+      margin: 20px 0px 60px 0px;
+      height: 350px; }
+    .composer__header {
+      width: 60%;
+      margin: 0px 0px 0px 20px; }
+    .composer__info-section {
+      background: linear-gradient(to right, #0d0d0c 50%, transparent 100%); }
+  .blur_back {
+    width: 80%;
+    background-position: -100% 10% !important; } }
 
 /* CAROUSEL SCALE */
 .scale-card:hover {
@@ -305,6 +391,30 @@ footer {
   margin-top: 50px;
   margin-left: 50px; }
 
+.movie-slider {
+  position: relative; }
+
+.movie-slider::before {
+  content: '';
+  height: 438px;
+  width: 100px;
+  display: block;
+  background: linear-gradient(to right, #1d1d29, transparent);
+  position: absolute;
+  left: 0;
+  z-index: 1; }
+
+.movie-slider::after {
+  content: '';
+  height: 438px;
+  width: 100px;
+  display: block;
+  background: linear-gradient(to left, #1d1d29, transparent);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1; }
+
 .movie-list {
   margin: 30px 0;
   display: flex;
@@ -324,7 +434,7 @@ footer {
   border-radius: 50px; }
 
 .movie-card {
-  background-color: white;
+  background: linear-gradient(135deg, #0dbfec 0%, #0dbfec 34%, #ff1e95 80%, #ff1e95 100%);
   border-radius: 10px;
   width: 182px;
   box-shadow: 0px 5px 10px #111111;
@@ -338,12 +448,14 @@ footer {
   transform: scale(1.08); }
 
 .movie-poster {
-  border-radius: 10px 10px 0px 0px; }
+  border-radius: 10px 10px 0px 0px;
+  margin: 2px; }
 
 .movie-info {
   padding: 15px 10px; }
 
 .movie-title {
+  color: white;
   font-size: 15px;
   font-weight: 400;
   letter-spacing: -1px;
@@ -352,11 +464,11 @@ footer {
 
 .btn-watch {
   font-weight: 700;
-  background-color: #ff1e95;
+  background-color: white;
   padding: 8px 36px;
   border-radius: 50px;
   border: 3px solid transparent;
-  color: white;
+  color: #ff1e95;
   position: absolute;
   bottom: 0;
   margin-bottom: 5px; }
@@ -364,21 +476,20 @@ footer {
 /*----------------------------------
 -------- news AREA CSS START -------
 ------------------------------------*/
-.news-content {
+.news__nav button:hover {
+  color: #0dbfec; }
+
+.news__content {
   position: absolute;
-  width: 80%;
-  left: 60px;
-  bottom: 35px;
-  right: 400px;
   text-shadow: 1px 2px 2px black; }
-  .news-content a:hover {
+  .news__content a:hover {
     color: #ff1e95; }
 
-.news-bg {
+.news__bg {
   height: 350px;
   padding: 5px; }
 
-.news-date {
+.news__date {
   position: absolute;
   top: 0;
   border-radius: 10px;
@@ -389,16 +500,16 @@ footer {
   background: linear-gradient(135deg, #0dbfec 0%, #0dbfec 34%, #ff1e95 64%, #ff1e95 100%);
   padding: 20px;
   color: white; }
-  .news-date h3 {
+  .news__date h3 {
     font-size: 50px;
     text-align: center; }
 
-.news-slide-area {
+.news__slide-area {
   position: relative;
   overflow: hidden;
   border-radius: 10px; }
 
-.news-card {
+.news__card {
   background-color: white;
   border-radius: 10px;
   width: 900px;
@@ -408,6 +519,84 @@ footer {
   position: relative;
   transition: all 1s; }
 
+.news__slider {
+  position: relative; }
+
+.news__slider::before {
+  content: '';
+  height: 370px;
+  width: 80px;
+  display: block;
+  background: linear-gradient(to right, #1d1d29, transparent);
+  position: absolute;
+  left: 0;
+  z-index: 1; }
+
+.news__slider::after {
+  content: '';
+  height: 370px;
+  width: 80px;
+  display: block;
+  background: linear-gradient(to left, #1d1d29, transparent);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1; }
+
+.flickity-prev-next-button {
+  z-index: 2; }
+
 /*----------------------------------
 --------- news AREA CSS END --------
 -----------------------------------*/
+.composer {
+  box-shadow: 0px 0px 150px -45px #0dbfec; }
+  .composer:hover {
+    box-shadow: 0px 0px 120px -55px #ff1e95; }
+  .composer__card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.4s;
+    font-size: 14px;
+    font-weight: 400; }
+    .composer__card:hover {
+      transform: scale(1.02);
+      transition: all 0.4s; }
+  .composer__info-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .composer__header h2 {
+    color: #fff; }
+  .composer__header h3 {
+    color: #ff1e95;
+    font-size: 18px; }
+  .composer__header h4 {
+    margin: 2px 0px;
+    color: #0dbfec;
+    font-size: 16px; }
+  .composer__profile-photo {
+    width: 200px;
+    height: 120px;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5); }
+  .composer__back1 {
+    background: url("../images/composers/john_williams2.jpg");
+    background-position: center; }
+
+.blur_back {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  right: 0;
+  background-size: cover;
+  border-radius: 11px; }
