@@ -1,7 +1,6 @@
 /* LABELS */
 body {
   font-family: 'Poppins', sans-serif;
-  /*  background-image: url("../images/what-the-hex-dark.png"); */
   background: #1d1d29;
   overflow-x: hidden; }
 
@@ -88,10 +87,16 @@ ol {
   color: white; }
 
 .section-wick {
-  width: 100vw;
-  background-size: cover;
-  margin: 0;
-  box-shadow: 30px white inset; }
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.container-xxl {
+  /* MODIFICADOR BOOSTRAP */
+  padding: 0; }
+
+.col-12 {
+  padding: 0px; }
 
 .project-item {
   list-style: url("../images/project-icon.png"); }
@@ -104,7 +109,7 @@ ol {
 
 .header-home, .header-other {
   padding: 5px 40px;
-  text-shadow: 1px 2px 3px black;
+  text-shadow: 0 0 60px black,0 0 50px black,0 0 40px black, 0 0 30px black, 1px 1px 3px black, -1px -1px 3px black;
   background-image: url("../images/jedi_order.jpg");
   background-size: cover;
   background-position: center;
@@ -129,14 +134,13 @@ ol {
     color: #0dbfec; }
 
 footer {
-  width: 100vw;
   height: 199px;
   padding-top: 50px;
   text-align: center;
   background-image: url("../images/footer.jpg");
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  text-shadow: 1px 5px 3px black; }
+  text-shadow: 0 0 60px black,0 0 50px black,0 0 40px black, 0 0 30px black, 1px 1px 3px black, -1px -1px 3px black; }
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /* ############################ MOBILE GRID ############################# */
@@ -148,12 +152,10 @@ footer {
   .quote {
     /* QUOTE SECTION */ }
     .quote__text-size {
+      text-align: center;
       margin: 0px 5%;
       font-size: 13px;
       padding-top: 1%; }
-    .quote__lotr-size {
-      width: 240px;
-      height: 180px; }
   h3 {
     line-height: 0.8; }
     h3 a {
@@ -196,11 +198,9 @@ footer {
   .quote {
     /* QUOTE SECTION */ }
     .quote__text-size {
+      text-align: center;
       margin: 0px 10%;
       font-size: 15px; }
-    .quote__lotr-size {
-      width: 320px;
-      height: 220px; }
   h3 {
     line-height: 0.8; }
     h3 a {
@@ -242,11 +242,9 @@ footer {
   .quote {
     /* QUOTE SECTION */ }
     .quote__text-size {
+      text-align: center;
       margin: 0px 10%;
       font-size: 15px; }
-    .quote__lotr-size {
-      width: 320px;
-      height: 220px; }
   .news {
     /* NEWS SECTION */ }
     .news__card {
@@ -288,6 +286,7 @@ footer {
   .quote {
     /* QUOTE SECTION */ }
     .quote__text-size {
+      text-align: center;
       font-size: 22px;
       margin: 0px 20%;
       padding-top: 5%; }
@@ -327,10 +326,6 @@ footer {
   /* SCALE */ }
 
 /* ----------------- */
-.texto-encima {
-  position: absolute;
-  text-align: center; }
-
 .animation-text {
   /* TEXT ANIMATION */
   -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
