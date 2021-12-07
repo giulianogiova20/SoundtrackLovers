@@ -76,12 +76,15 @@ ol {
 .greenText {
   color: greenyellow; }
 
-.selector-hv a:hover {
+.selector-hv button:hover {
   background-color: black;
   color: white !important; }
 
-.selector-hv a:active {
-  background-color: gray !important; }
+.selector-hv button:active {
+  background-color: black !important; }
+
+.nav-pills .active {
+  background-color: #0dbfec !important; }
 
 .card-link a:hover {
   color: white; }
@@ -585,6 +588,15 @@ footer {
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5); }
   .composer__back1 {
     background: url("../images/composers/john_williams2.jpg");
+    background-position: center; }
+  .composer__back2 {
+    background: url("../images/composers/hans_zimmer2.jpg");
+    background-position: center; }
+  .composer__back3 {
+    background: url("../images/composers/james_horner2.jpg");
+    background-position: center; }
+  .composer__back4 {
+    background: url("../images/composers/howard_shore2.jpg");
     background-position: center; }
 
 .blur_back {
