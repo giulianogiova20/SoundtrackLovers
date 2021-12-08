@@ -112,15 +112,17 @@ ol {
 
 .header-home, .header-other {
   padding: 5px 40px;
-  text-shadow: 0 0 60px black,0 0 50px black,0 0 40px black, 0 0 30px black, 1px 1px 3px black, -1px -1px 3px black;
+  text-shadow: 0 0 20px black, 1px 1px 3px black, -1px -1px 3px black;
   background-image: url("../images/jedi_order.jpg");
   background-size: cover;
   background-position: center;
   width: 100vw; }
+  .header-home p, .header-other p {
+    text-shadow: 0 0 40px black,0 0 30px black, 1px 1px 3px black, -1px -1px 3px black; }
   .header-home nav, .header-other nav {
     font-weight: bold; }
     .header-home nav a:hover, .header-other nav a:hover {
-      color: #0dbfec !important; }
+      color: #ff1e95 !important; }
 
 .header-other {
   background-image: url("../images/blade_runner.jpg");
