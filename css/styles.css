@@ -1,4 +1,21 @@
-/* LABELS */
+/**
+ *** CSS Indexing ***
+ * GENERAL STYLES CSS
+ * HEADER CSS
+ * FOOTER CSS
+ * PAGES CSS
+ * MEDIA QUERIES CSS
+ * ANIMATIONS CSS
+ * FAN'S SECTION CSS
+ * NEWS SECTION CSS
+
+
+
+**/
+/* ############################################ */
+/* ########### GENERAL STYLES START ########### */
+/* ############################################ */
+/* ***************************** LABELS *******************************/
 body {
   font-family: 'Poppins', sans-serif;
   background: #1d1d29;
@@ -17,37 +34,7 @@ p {
 section {
   padding: 20px 0px; }
 
-table {
-  /*--------------- TABLA------------- */
-  border-collapse: collapse;
-  background-color: #fbbd11;
-  width: 250px;
-  border: 3px solid gray;
-  margin: 10px 10px 10px 0px; }
-
-th {
-  width: 10%;
-  height: 15%;
-  text-align: left;
-  background-color: #c28e00;
-  border: 1px solid gray;
-  padding: 10px 10px;
-  font-size: 80%;
-  font-weight: bold; }
-
-td {
-  width: 25%;
-  text-align: left;
-  border: 1px solid gray;
-  padding: 5px 5px 0px 10px;
-  font-size: 60%;
-  font-weight: bold; }
-
-ol {
-  list-style-image: url(https://mdn.mozillademos.org/files/11981/starsolid.gif); }
-
-/*------------------------- TABLA-------------------- */
-/* *******************************CLASES *******************************/
+/* **************************** CLASSES *******************************/
 /* -------------COLORS-------- */
 .bg-magenta {
   background-color: #ff1e95 !important; }
@@ -67,15 +54,14 @@ ol {
 .text-cyan {
   color: #0dbfec; }
 
-.colorTabletitle {
-  background-color: #aeb7b3; }
+/* --- BOOTSRAP MODIFICATORS --- */
+.container-xxl {
+  padding: 0; }
 
-.redText {
-  color: red; }
+.col-12 {
+  padding: 0px; }
 
-.greenText {
-  color: greenyellow; }
-
+/* --- DROPDOWN MENU ON PAGES --- */
 .selector-hv button:hover {
   background-color: black;
   color: white !important; }
@@ -86,21 +72,6 @@ ol {
 .nav-pills .active {
   background-color: #0dbfec !important; }
 
-.card-link a:hover {
-  color: white; }
-
-.section-wick {
-  width: 100%;
-  padding: 0;
-  margin: 0; }
-
-.container-xxl {
-  /* MODIFICADOR BOOSTRAP */
-  padding: 0; }
-
-.col-12 {
-  padding: 0px; }
-
 .project-item {
   list-style: url("../images/project-icon.png"); }
   .project-item a {
@@ -110,6 +81,14 @@ ol {
     .project-item a:hover {
       color: #ff1e95; }
 
+/* ########################################## */
+/* ########### GENERAL STYLES END ########### */
+/* ##########################################
+
+*/
+/* #################################### */
+/* ########### HEADER START ########### */
+/* #################################### */
 .header-home, .header-other {
   padding: 5px 40px;
   text-shadow: 0 0 20px black, 1px 1px 3px black, -1px -1px 3px black;
@@ -138,7 +117,14 @@ ol {
   .navbar-dark:hover {
     color: #0dbfec; }
 
-/* ####### FOOTER START ###### */
+/* ################################## */
+/* ########### HEADER END ########### */
+/* ################################## 
+
+*/
+/* ############################ ###### */
+/* ########### FOOTER START ########### */
+/* ################################### */
 footer {
   height: 199px;
   padding-top: 50px;
@@ -148,8 +134,108 @@ footer {
   background-position: center;
   text-shadow: 0 0 60px black,0 0 50px black,0 0 40px black, 0 0 30px black, 1px 1px 3px black, -1px -1px 3px black; }
 
-/* ####### FOOTER END ###### */
-/*############################ MEDIA QUERIES ###########################*/
+/* ############################ ###### */
+/* ########### FOOTER END ########### */
+/* ################################### 
+
+*/
+/* ############################ ###### */
+/* ########### PAGES START ########### */
+/* ################################### 
+
+*/
+/* ####### INDEX PAGE START ###### */
+.section-wick {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+/* ####### INDEX PAGE END ###### */
+/* ####### COMPOSERS PAGE START ###### */
+.composer {
+  box-shadow: 0px 0px 150px -45px #0dbfec; }
+  .composer:hover {
+    box-shadow: 0px 0px 120px -55px #ff1e95; }
+  .composer__card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.4s;
+    font-size: 14px;
+    font-weight: 400; }
+    .composer__card:hover {
+      transform: scale(1.02);
+      transition: all 0.4s; }
+  .composer__info-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .composer__header h2 {
+    color: #fff; }
+  .composer__header h3 {
+    color: #ff1e95;
+    font-size: 18px; }
+  .composer__header h4 {
+    margin: 2px 0px;
+    color: #0dbfec;
+    font-size: 16px; }
+  .composer__profile-photo {
+    width: 200px;
+    height: 120px;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5); }
+  .composer__back1 {
+    background: url("../images/composers/john_williams2.jpg");
+    background-position: center; }
+  .composer__back2 {
+    background: url("../images/composers/hans_zimmer2.jpg");
+    background-position: center; }
+  .composer__back3 {
+    background: url("../images/composers/james_horner2.jpg");
+    background-position: center; }
+  .composer__back4 {
+    background: url("../images/composers/howard_shore2.jpg");
+    background-position: center; }
+  .composer__blur-back {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    right: 0;
+    background-size: cover;
+    border-radius: 11px; }
+
+/* ####### COMPOSERS PAGE END ###### 
+
+
+*/
+/* ####### MOVIES PAGE START ###### */
+.movie {
+  box-shadow: 0px 0px 80px -45px #ff1e95; }
+  .movie:hover {
+    box-shadow: 0px 0px 100px -55px #0dbfec; }
+
+/* ####### MOVIES PAGE END ###### 
+
+
+*/
+/* ################################### */
+/* ########### PAGES END ########### */
+/* ################################### 
+
+*/
+/* ########################################### */
+/* ########### MEDIA QUERIES START ########### */
+/* ########################################### 
+
+*/
 /* ############################ MOBILE GRID ############################# */
 @media (max-width: 599px) {
   .header-home, .header-other {
@@ -192,9 +278,9 @@ footer {
       margin: 230px 80px 10px 80px; }
     .composer__info-section {
       background: linear-gradient(to top, #141413 50%, transparent 100%); }
-  .blur_back {
-    width: 100%;
-    background-position: 50% 50% !important; } }
+    .composer__blur-back {
+      width: 100%;
+      background-position: 50% 50% !important; } }
 
 /* ############################ TABLET GRID V1############################# */
 @media (min-width: 600px) and (max-width: 768px) {
@@ -237,8 +323,8 @@ footer {
       margin: 120px 0px 0px 100px; }
     .composer__info-section {
       background: linear-gradient(to top, #141413 50%, transparent 100%); }
-  .blur_back {
-    width: 100%; } }
+    .composer__blur-back {
+      width: 100%; } }
 
 /* ############################ TABLET GRID V2############################# */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -277,8 +363,8 @@ footer {
       margin: 120px 0px 0px 100px; }
     .composer__info-section {
       background: linear-gradient(to top, #141413 50%, transparent 100%); }
-  .blur_back {
-    width: 100%; } }
+    .composer__blur-back {
+      width: 100%; } }
 
 /* ############################ DESKTOP GRID ############################# */
 @media (min-width: 1025px) {
@@ -323,18 +409,66 @@ footer {
       margin: 0px 0px 0px 20px; }
     .composer__info-section {
       background: linear-gradient(to right, #0d0d0c 50%, transparent 100%); }
-  .blur_back {
-    width: 80%;
-    background-position: -100% 10% !important; } }
+    .composer__blur-back {
+      width: 80%;
+      background-position: -100% 10% !important; } }
 
-/* CAROUSEL SCALE */
-.scale-card:hover {
-  transform: scale(1.02, 1.02);
-  /* SCALE */ }
+/* ######################################### */
+/* ########### MEDIA QUERIES END ########### */
+/* ######################################### 
 
-/* ----------------- */
+*/
+/* ######################################## */
+/* ########### ANIMATIONS START ########### */
+/* ######################################## */
+/* --- GALLERY SCALE ---*/
+.scale-img:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0px 0px 100px 30px black; }
+
+/* --- BUTON FLIP ---*/
+.btn-flip {
+  font-weight: 700;
+  background-color: white;
+  padding: 8px 30px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  color: #ff1e95;
+  bottom: 0;
+  margin: 5px 23px;
+  opacity: 1;
+  outline: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(40%) rotateX(0); }
+  .btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg); }
+  .btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #0dbfec;
+    transition: 0.6s;
+    position: absolute;
+    content: attr(data-back);
+    transform: translateY(0) rotateX(90deg); }
+  .btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: 0.6s;
+    position: relative;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0); }
+
+/* --- TEXT ANIMATION --- */
 .animation-text {
-  /* TEXT ANIMATION */
   -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
 
@@ -358,35 +492,11 @@ footer {
     filter: blur(0px);
     opacity: 1; } }
 
-.animation-img {
-  /* IMG ANIMATION */
-  -webkit-animation: kenburns-top 5s ease-out both;
-  animation: kenburns-top 5s ease-out both; }
+/* ##################################### */
+/* ########### ANIMATIONS END ########### */
+/* ###################################### 
 
-@-webkit-keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%; }
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-    transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-    transform-origin: top; } }
-
-@keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%; }
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-    transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-    transform-origin: top; } }
-
+*/
 /* ####### FAN'S SELECTION START ###### */
 .main-header {
   color: lawngreen;
@@ -400,7 +510,7 @@ footer {
 .movie-slider::before {
   content: '';
   height: 438px;
-  width: 100px;
+  width: 60px;
   display: block;
   background: linear-gradient(to right, #1d1d29, transparent);
   position: absolute;
@@ -410,7 +520,7 @@ footer {
 .movie-slider::after {
   content: '';
   height: 438px;
-  width: 100px;
+  width: 60px;
   display: block;
   background: linear-gradient(to left, #1d1d29, transparent);
   position: absolute;
@@ -549,65 +659,3 @@ footer {
   z-index: 2; }
 
 /* ####### LATEST NEWS END ####### */
-/* ####### COMPOSERS PAGE START ###### */
-.composer {
-  box-shadow: 0px 0px 150px -45px #0dbfec; }
-  .composer:hover {
-    box-shadow: 0px 0px 120px -55px #ff1e95; }
-  .composer__card {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 10px;
-    transition: all 0.4s;
-    font-size: 14px;
-    font-weight: 400; }
-    .composer__card:hover {
-      transform: scale(1.02);
-      transition: all 0.4s; }
-  .composer__info-section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-blend-mode: multiply;
-    z-index: 2;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-  .composer__header h2 {
-    color: #fff; }
-  .composer__header h3 {
-    color: #ff1e95;
-    font-size: 18px; }
-  .composer__header h4 {
-    margin: 2px 0px;
-    color: #0dbfec;
-    font-size: 16px; }
-  .composer__profile-photo {
-    width: 200px;
-    height: 120px;
-    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5); }
-  .composer__back1 {
-    background: url("../images/composers/john_williams2.jpg");
-    background-position: center; }
-  .composer__back2 {
-    background: url("../images/composers/hans_zimmer2.jpg");
-    background-position: center; }
-  .composer__back3 {
-    background: url("../images/composers/james_horner2.jpg");
-    background-position: center; }
-  .composer__back4 {
-    background: url("../images/composers/howard_shore2.jpg");
-    background-position: center; }
-  .composer__blur-back {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    height: 100%;
-    right: 0;
-    background-size: cover;
-    border-radius: 11px; }
-
-/* ####### COMPOSERS PAGE END ###### */

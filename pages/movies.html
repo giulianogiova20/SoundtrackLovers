@@ -1,90 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Encabezado -->
+<head> <!-- HEAD -->
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Movie Soundtracks</title>
-    <meta name="description" content="In this section you will find the best movie soundtracks, the making of, lists and more">
-    <meta name="keywords"  content="soundtrack, music, movies, series, games, Batman, Marvel, DC, The Godfather, Lord Of The Rings">
+    <meta name="description" content="In this section you will find the best movie soundtracks, the making of, lists and more"">
+    <meta name="keywords"  content="soundtrack, music, movies, series, games, Interstellar, Avatar, The Lord Of The Rings, Star Wars">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="grid-areas3"><!-- Cuerpo -->
-    <header>
-        <h1 hidden>Movie Soundtracks</h1>
+<body> <!-- BODY -->
+    <header class="header-other"> <!-- HEADER -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="nav-link active mb-1" href="../index.html"><img src="../images/logo.svg" alt="Logo"><p class="text-dark">Soundtrack Lovers</p></a>
-                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon "></span>
-                </button>
+                    <div class="justify-content-start"><a class="nav-link active mb-1" href="../index.html"><img src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/50/ffffff/external-headphone-stay-home-vitaliy-gorbachev-fill-vitaly-gorbachev.png"/></a><p class="text-white">Soundtrack Lovers</p></a></div>
+                    <button class="navbar-toggler navbar-dark btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav nav-pills  flex-md-row">
-                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" aria-current="page" href="../index.html">Home</a></li>
-                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" href="./composers.html">Composers</a></li>
-                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link active bg-dark" href="./movies.html">Movies</a></li>
-                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" href="./series.html">Series</a></li>
-                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-dark" href="./games.html">Games</a></li>
+                    <ul class="nav navbar-nav nav-pills flex-md-row">
+                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-white" aria-current="page" href="../index.html">Home</a></li>
+                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-white" href="./composers.html">Composers</a></li>
+                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link active bg-magenta" href="./movies.html">Movies</a></li>
+                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-white" href="./series.html">Series</a></li>
+                        <li class="nav-item mx-4"><a class="flex-sm-fill text-center nav-link text-white" href="./games.html">Games</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
-    <section class="container">
+        <section class="container">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <h1 class="text-white">Movies</h1>
+                </div>
+            </div>
+        </section>
+    </header> <!-- HEADER END-->
+    <section class="container"> <!-- MOVIES -->
         <div class="row">
             <div class="col-lg-3 mt-2 mb-4">
                 <div class="dropdown">
-                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                    Select Movie  
+                    <button class="btn bg-magenta dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Movie 
                     </button>
                     <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Interstellar</a></li>
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">The Godfather</a></li>
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Batman</a></li>
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Troy</a></li>
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Star Wars</a></li>
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Shawshank Redemption</a></li>
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Bourne Identity</a></li>
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Lion King</a></li>
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">The Lord Of The Rings</a></li>
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Inception</a></li>
-                        <li class="selector-hv"><a href="./movies.html" class="dropdown-item text-center text-warning">Jurassic Park</a></li>
+                        <div class="nav flex-column nav-pills selector-hv" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active text-center text-magenta" id="v-pills-movie1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-movie1" type="button" role="tab" aria-controls="v-pills-movie1" aria-selected="true">Interstellar</button>
+                            <button class="nav-link text-center text-magenta" id="v-pills-movie2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-movie2" type="button" role="tab" aria-controls="v-pills-movie2" aria-selected="false">Avatar</button>
+                            <button class="nav-link text-center text-magenta" id="v-pills-movie3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-movie3" type="button" role="tab" aria-controls="v-pills-movie3" aria-selected="false">Star Wars Saga</button>
+                            <button class="nav-link text-center text-magenta" id="v-pills-movie4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-movie4" type="button" role="tab" aria-controls="v-pills-movie4" aria-selected="false">The Lord Of the Rings Saga</button>
+                          </div>
                     </ul>
               </div>
-            </div>            
-            <div class="col-lg-8">
-                <div class="my-4">
-                    <h2 class="text-white">Making Of: Interstellar</h2>
-                    <iframe width="70%" height="100%" src="https://www.youtube.com/embed/f_NGSRXEx9E" title="YouTube video player" frameborderz="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>Some statistics about number of listenings</p>
+            </div>
+            <div class="tab-content col-lg-8" id="v-pills-tabContent">
+                <!-- INTERSTELLAR -->
+                <div class="tab-pane fade show active" id="v-pills-movie1" role="tabpanel" aria-labelledby="v-pills-movie1-tab">
+                    <div class="my-2">
+                        <div class="row justify-content-center">
+                            <div class="col-8 justify-content-center">
+                                <h2 class="text-white">Interstellar</h2>
+                                <h3 class="text-magenta">By Hans Zimmer</h3>
+                                <img width="80%" class="movie mt-2" src="../images/movies/interstellar.jpg" alt="Interstellar">
+                            </div>
+                        </div>
+                        <h2 class="text-white mt-5">Making Of: Interstellar</h2>
+                        <iframe width="100%" height="380" src="https://www.youtube.com/embed/f_NGSRXEx9E" title="YouTube video player" frameborderz="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>It goes back to Chris Nolan and Interstellar. Chris asked me to write this piece of music before he’d even written the script. So I play it to him without looking at him. You can see the couch behind me, he was sitting on the couch. So I was not facing him, and I got to the end of it and I said, ‘So what do you think?’ And he’s just leaning back and goes, ‘Hmm, suppose I better make the movie.’ And I’m going, ‘What is the movie?’ Because he never told me what it was going to be about.</p>
+                        <div class="my-5">
+                            <h2 class="text-white">Playlist</h2>
+                            <iframe src="https://open.spotify.com/embed/album/3B61kSKTxlY36cYgzvf3cP" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                        <div class="my-5">
+                            <h2 class="text-white">GALLERY</h2>
+                            <div class="row">
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/interstellar1.jpg" alt="Interstellar">
+                                </div>
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/interstellar2.jpg" alt="Interstellar">
+                                </div>
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/interstellar3.jpg" alt="Interstellar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="my-4">
-                    <h2 class="text-white">Playlist</h2>
-                    <iframe src="https://open.spotify.com/embed/album/3B61kSKTxlY36cYgzvf3cP" width="90%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <!-- AVATAR -->
+                <div class="tab-pane fade" id="v-pills-movie2" role="tabpanel" aria-labelledby="v-pills-movie2-tab">                
+                    <div class="my-2">
+                        <div class="row justify-content-center">
+                            <div class="col-8 justify-content-center">
+                                <h2 class="text-white">Avatar</h2>
+                                <h3 class="text-magenta">By James Horner</h3>
+                                <img width="80%" class="movie mt-2" src="../images/movies/avatar.jpg" alt="Avatar">
+                            </div>
+                        </div>
+                        <h2 class="text-white mt-5">Making Of: Avatar</h2>
+                        <iframe width="100%" height="380" src="https://www.youtube.com/embed/Oz9EuW2JtFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Our goal with the musical score for Avatar was to resonate traditional film sensibilities, but also to introduce a new culture, the Na'vi of Pandora, and to make it part of the score. To create that new musical culture, one that was logical within the scope of the film, we sought out an ethnomusicologist with a wide knowledge of many diverse cultures to work with composer James Horner. Dr. Wanda Bryant from California Institute of the Arts brought a new perspective to our work and with her input, we were able to flesh out the musical voice of the Na'vi and marry it into the general score. <br> - Jon Landau, Avatar producer, Lightstorm Entertainment</p>
+                        <div class="my-5">
+                            <h2 class="text-white">Playlist</h2>
+                            <iframe src="https://open.spotify.com/embed/album/1H81jGoWeLI8ufq42GfDPn?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                        <div class="my-5">
+                            <h2 class="text-white">GALLERY</h2>
+                            <div class="row">
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/avatar1.jpg" alt="Avatar">
+                                </div>
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/avatar2.jpg" alt="Avatar">
+                                </div>
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/avatar3.jpeg" alt="Avatar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="my-4">
-                    <h2 class="text-white">Gallery</h2>
-                    <img src="https://d15v4l58k2n80w.cloudfront.net/file/1396975600/29164394627/width=800/height=500/format=JPG/fit=crop/rev=5/t=402394/e=never/k=0b4536d0/037.jpg" width="80%" height="60%" alt="Interstellar Live Concert">
+                <!-- STAR WARS -->
+                <div class="tab-pane fade" id="v-pills-movie3" role="tabpanel" aria-labelledby="v-pills-movie3-tab">
+                    <div class="my-2">
+                        <div class="row justify-content-center">
+                            <div class="col-8 justify-content-center">
+                                <h2 class="text-white">Star Wars</h2>
+                                <h3 class="text-magenta">By John Williams</h3>
+                                <img width="80%" class="movie mt-2" src="../images/movies/star_wars.jpg" alt="Star Wars">
+                            </div>
+                        </div>
+                        <h2 class="text-white mt-5">Making Of: Star Wars</h2>
+                        <iframe width="100%" height="380" src="https://www.youtube.com/embed/kQ4jZr1w0AI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                        <p>"Personally, I feel very attached to Korngold's music (…). When George Lucas asked me to write a song for Luke that was both heroic and idealistic in essence, and presented in the form of fanfare, I associated in my mind Korngold's heroism, Holst's idealism, and Elgar's fanfare. All of this obviously implies an inevitable resemblance to Kings Row and many other compositions, but from a thematic, harmonic and melodic point of view, all the notes are my own. harvest " <br> - John Williams</p>
+                        <div class="my-5">
+                            <h2 class="text-white">Playlist</h2>
+                            <iframe src="https://open.spotify.com/embed/album/6WSYrST8ansBqlu87reSNZ?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                        
+                            <div class="my-5">
+                            <h2 class="text-white">GALLERY</h2>
+                            <div class="row">
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/star_wars1.jpg" alt="Star Wars">
+                                </div>
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/star_wars2.jpg" alt="Star Wars">
+                                </div>
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/star_wars3.jpg" alt="Star Wars">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                </div> 
+                <!-- THE LORD OF THE RINGS -->
+                <div class="tab-pane fade" id="v-pills-movie4" role="tabpanel" aria-labelledby="v-pills-movie4-tab">
+                    <div class="my-2">
+                        <div class="row justify-content-center">
+                            <div class="col-8 justify-content-center">
+                                <h2 class="text-white">The Lord Of The Rings</h2>
+                                <h3 class="text-magenta">By Howard Shore</h3>
+                                <img width="80%" class="movie mt-2" src="../images/movies/lotr.jpg" alt="The Lord Of The Rings">
+                            </div>
+                        </div>
+                        <h2 class="text-white mt-5">Making Of: The Lord Of The Rings</h2>
+                        <iframe width="100%" height="380" src="https://www.youtube.com/embed/iRvDSekvSXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        <div class="my-5">
+                            <h2 class="text-white">Playlist</h2>
+                            <iframe src="https://open.spotify.com/embed/playlist/0uwqioeN6C1NuXwjNVtY5f?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                            <div class="my-5">
+                            <h2 class="text-white">GALLERY</h2>
+                            <div class="row">
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/lotr1.jpg" alt="The Lord Of The Rings">
+                                </div>
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/lotr2.jpg" alt="The Lord Of The Rings">
+                                </div>
+                                <div class="col-12 p-2">
+                                    <img class="scale-img" width="100%" src="../images/movies/lotr3.jpg" alt="The Lord Of The Rings">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container">
-        <div class="row justify-content-center">
-            <div class="col-6">
-                <h2 class="text-white">Upcoming Movie Soundtracks</h2>
-                    <ul class="text-white">
-                        <li class="project-item"><a href="">Movie I</a></li>
-                        <li class="project-item"><a href="">Movie II</a></li>
-                        <li class="project-item"><a href="">Movie III</a></li>
-                    </ul>
-            </div>
-        </div>
-    </section>
-    <footer><!-- Pie de pagina -->
+    </section> <!-- COMPOSERS END -->
+    <footer><!-- FOOTER -->
         <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
@@ -99,9 +204,9 @@
             <circle cx="12" cy="12" r="3" />
             <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
         </svg></a>
-<p>All rights reserved</p>
-    </footer>
+        <p>All rights reserved</p>
+    </footer> <!-- FOOTER END -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-</body>
+</body> <!-- BODY END -->
 </html>
