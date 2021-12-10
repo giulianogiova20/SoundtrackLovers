@@ -1,20 +1,19 @@
-
-const list = document.querySelector('.movie-list');
+const list = document.querySelector(".movie-list");
 let isDown = false;
 let StartX, scrollLeft;
 
-list.addEventListener('mousedown', (e) => {
+list.addEventListener("mousedown", (e) => {
     isDown = true;
     StartX = e.pageX - list.offsetLeft;
     scrollLeft = list.scrollLeft;
 });
-list.addEventListener('mouseleave', () => {
+list.addEventListener("mouseleave", () => {
     isDown = false;
 });
-list.addEventListener('mouseup', () => {
+list.addEventListener("mouseup", () => {
     isDown = false;
 });
-list.addEventListener('mousemove', (e) => {
+list.addEventListener("mousemove", (e) => {
     if(!isDown) return;
     e.preventDefault();
     const x = e.pageX - list.offsetLeft;

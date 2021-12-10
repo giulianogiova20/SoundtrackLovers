@@ -6,21 +6,19 @@
 	<meta name="description" content="This is a site for people who love soundtracks, here you will find the best composers, songs, albums and lists">
     <meta name="keywords"  content="soundtrack, music, movies, series, games, Hans Zimmer, John Williams, James Horner, Howard Shore">
 	<title>Soundtrack Lovers</title>
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- BOOTSRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- STYLES -->
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/owlcarousel.css">
     <!--FLICKITY-->
-    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-
 </head>
-<body> <!-- Cuerpo -->
+<body> <!-- BODY -->
     <header>
         <section class="container-xxl header-home">
             <h1 hidden>Soundtracks</h1>
@@ -51,11 +49,12 @@
                 </div>  
 
         </section>
-    </header>
+    </header><!-- HEADER END-->
     <section class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-white">Fan's Selection</h2><!-- FAN'S SELECTION -->
+                <!-- FAN'S SELECTION -->
+                <h2 class="text-white">Fan's Selection</h2>
                 <nav class="news__nav">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                       <button class="nav-link active text-magenta" id="nav-movies-tab" data-bs-toggle="tab" data-bs-target="#nav-movies" type="button" role="tab" aria-controls="nav-movies" aria-selected="true">Movies</button>
@@ -66,195 +65,146 @@
                   <div class="tab-content" id="nav-tabContent">
                     <!-- MOVIES TAB -->
                     <div class="tab-pane fade show active" id="nav-movies" role="tabpanel" aria-labelledby="nav-movies-tab">
-                            <div class="movie-slider">
-                                <div class="movie-list"> 
-                                    <div class="movie-card"> 
-                                        <img src="./images/fans/movies/inception.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Inception</h3>
-                                            <a href="https://www.imdb.com/title/tt1375666/?ref_=nv_sr_srsg_0" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
-                                        </div>
+                        <div class="movie-slider">
+                            <div class="movie-list"> 
+                                <div class="movie-card"> 
+                                    <img src="./images/fans/movies/inception.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Inception</h3>
+                                        <a href="https://www.imdb.com/title/tt1375666/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
-                                    <div class="movie-card">
-                                        <img src="./images/fans/movies/lotr.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Lord Of The Rings: Two Towers</h3>
-                                            <a href="https://www.imdb.com/title/tt0167261/?ref_=nv_sr_srsg_0" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
-                                        </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/movies/lotr.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Lord Of The Rings: Two Towers</h3>
+                                        <a href="https://www.imdb.com/title/tt0167261/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
-                                    <div class="movie-card">
-                                        <img src="./images/fans/movies/shawshank.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Shawshank Redemption</h3>
-                                            <a href="https://www.imdb.com/title/tt0111161/?ref_=nv_sr_srsg_0" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
-                                        </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/movies/shawshank.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Shawshank Redemption</h3>
+                                        <a href="https://www.imdb.com/title/tt0111161/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
-                                    <div class="movie-card">
-                                        <img src="./images/fans/movies/irishman.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">The Irishman</h3>
-                                            <a href="https://www.imdb.com/title/tt0167261/?ref_=nv_sr_srsg_0" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
-                                        </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/movies/swars_skywalker.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Star Wars: The Rise Of Skywalker</h3>
+                                        <a href="https://www.imdb.com/title/tt2527338/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
-                                    <div class="movie-card">
-                                        <img src="./images/fans/movies/swars_skywalker.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Star Wars: The Rise Of Skywalker</h3>
-                                            <a href="https://www.imdb.com/title/tt2527338/?ref_=nv_sr_srsg_0" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
-                                        </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/movies/batman.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Batman: Begins</h3>
+                                        <a href="https://www.imdb.com/title/tt0372784/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
-                                    <div class="movie-card">
-                                        <img src="./images/fans/movies/joker.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Joker</h3>
-                                            <a href="https://www.imdb.com/title/tt7286456/?ref_=nv_sr_srsg_0" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
-                                        </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/movies/joker.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Joker</h3>
+                                        <a href="https://www.imdb.com/title/tt7286456/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
-                                    <div class="movie-card">
-                                        <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Avengers: Endgame</h3>
-                                            <a href="https://www.imdb.com/title/tt0167261/?ref_=nv_sr_srsg_0" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
-                                        </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/movies/dune.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Dune</h3>
+                                        <a href="https://www.imdb.com/title/tt1160419/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
-                                    <div class="movie-card">
-                                        <img src="https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Knives Out</h3>
-                                            <a href="https://www.imdb.com/title/tt0167261/?ref_=nv_sr_srsg_0" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
-                                        </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/movies/bourne.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Bourne Identity</h3>
+                                        <button class="btn-watch">More Info</button>
                                     </div>
-                                    <div class="movie-card">
-                                        <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Parasite</h3>
-                                            <a href="https://www.imdb.com/title/tt0167261/?ref_=nv_sr_srsg_0" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
-                                        </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/movies/mind.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">A Beautiful Mind</h3>
+                                        <a href="https://www.imdb.com/title/tt0268978/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
-                                    <div class="movie-card">
-                                        <img src="https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Once Upon a Time... in Hollywood</h3>
-                                            <a href="https://www.imdb.com/title/tt0167261/?ref_=nv_sr_srsg_0" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
-                                        </div>
-                                    </div>
-                                    <div class="movie-card">
-                                        <img src="https://m.media-amazon.com/images/M/MV5BY2QzYTQyYzItMzAwYi00YjZlLThjNTUtNzMyMDdkYzJiNWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Little Women</h3>
-                                            <button class="btn-watch">More Info</button>
-                                        </div>
-                                    </div>
-                                    <div class="movie-card">
-                                        <img src="https://m.media-amazon.com/images/M/MV5BOGE4MmVjMDgtMzIzYy00NjEwLWJlODMtMDI1MGY2ZDlhMzE2XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">The Witcher</h3>
-                                            <button class="btn-watch">More Info</button>
-                                        </div>
-                                    </div>
-                                    <div class="movie-card">
-                                        <img src="https://m.media-amazon.com/images/M/MV5BMjA0YjYyZGMtN2U0Ni00YmY4LWJkZTItYTMyMjY3NGYyMTJkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                        <div class="movie-info">
-                                            <h3 class="movie-title">Frozen II</h3>
-                                            <button class="btn-watch">More Info</button>
-                                        </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/movies/avengers.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Avengers: Endgame</h3>
+                                        <a href="https://www.imdb.com/title/tt4154796/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                     <!-- SERIES TAB -->
                     <div class="tab-pane fade" id="nav-series" role="tabpanel" aria-labelledby="nav-series-tab">
                         <div class="movie-slider">
-                            <div class="movie-list"> 
+                            <div class="movie-list">
                                 <div class="movie-card">
                                     <img src="./images/fans/series/fringe.jpg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
                                         <h3 class="movie-title">Fringe</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <a href="https://www.imdb.com/title/tt1119644/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                                 <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMjEzMjcxNjA2Nl5BMl5BanBnXkFtZTgwMjAxMDM2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Booksmart</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BZGVmY2RjNDgtMTc3Yy00YmY0LTgwODItYzBjNWJhNTRlYjdkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Marriage Story</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UY268_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">The Irishman</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMTQxMTgyNDc5M15BMl5BanBnXkFtZTcwMzk4OTM5Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">The Company Men</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Joker</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Avengers: Endgame</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Knives Out</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Parasite</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Once Upon a Time... in Hollywood</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BY2QzYTQyYzItMzAwYi00YjZlLThjNTUtNzMyMDdkYzJiNWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Little Women</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BOGE4MmVjMDgtMzIzYy00NjEwLWJlODMtMDI1MGY2ZDlhMzE2XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <img src="./images/fans/series/witcher.jpg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
                                         <h3 class="movie-title">The Witcher</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <a href="https://www.imdb.com/title/tt5180504/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                                 <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMjA0YjYyZGMtN2U0Ni00YmY4LWJkZTItYTMyMjY3NGYyMTJkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <img src="./images/fans/series/got.jpeg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
-                                        <h3 class="movie-title">Frozen II</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <h3 class="movie-title">Game Of Thrones</h3>
+                                        <a href="https://www.imdb.com/title/tt0944947/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/series/prison.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Prison Break</h3>
+                                        <a href="https://www.imdb.com/title/tt0455275/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/series/lost.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Lost</h3>
+                                        <a href="https://www.imdb.com/title/tt0411008/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/series/westworld.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">Westworld</h3>
+                                        <a href="https://www.imdb.com/title/tt0475784" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/series/mandalorian.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">The Mandalorian</h3>
+                                        <a href="https://www.imdb.com/title/tt8111088/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/series/crown.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">The Crown</h3>
+                                        <a href="https://www.imdb.com/title/tt4786824/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
+                                    </div>
+                                </div>
+                                <div class="movie-card">
+                                    <img src="./images/fans/series/cards.jpg" alt="movie poster" class="movie-poster">
+                                    <div class="movie-info">
+                                        <h3 class="movie-title">House Of Cards</h3>
+                                        <a href="https://www.imdb.com/title/tt1856010/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -265,87 +215,59 @@
                         <div class="movie-slider">
                             <div class="movie-list">
                                 <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMWM5YzhmNGMtZTI4Ny00MGM4LThkYjAtMDIyMTEwNTQyZmQ1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <img src="./images/fans/games/acorigins.jpg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
-                                        <h3 class="movie-title">I am not okay with this</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <h3 class="movie-title">Assassin's Creed: Origins</h3>
+                                        <a href="https://www.imdb.com/title/tt7025920/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                                 <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMjEzMjcxNjA2Nl5BMl5BanBnXkFtZTgwMjAxMDM2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <img src="./images/fans/games/mw2.jpg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
-                                        <h3 class="movie-title">Booksmart</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <h3 class="movie-title">Call Of Duty: Modern Warfare 2</h3>
+                                        <a href="https://www.imdb.com/title/tt1450746/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                                 <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BZGVmY2RjNDgtMTc3Yy00YmY0LTgwODItYzBjNWJhNTRlYjdkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <img src="./images/fans/games/portal2.jpg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
-                                        <h3 class="movie-title">Marriage Story</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <h3 class="movie-title">Portal 2</h3>
+                                        <a href="https://www.imdb.com/title/tt1648163/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                                 <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UY268_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <img src="./images/fans/games/skyrim.jpg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
-                                        <h3 class="movie-title">The Irishman</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <h3 class="movie-title">The Elder Scrolls V: Skyrim</h3>
+                                        <a href="https://www.imdb.com/title/tt1814884/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                                 <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMTQxMTgyNDc5M15BMl5BanBnXkFtZTcwMzk4OTM5Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <img src="./images/fans/games/uncharted4.jpg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
-                                        <h3 class="movie-title">The Company Men</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <h3 class="movie-title">Uncharted 4: A Thief's End</h3>
+                                        <a href="https://www.imdb.com/title/tt3334704/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                                 <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <img src="./images/fans/games/tlou2.jpg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
-                                        <h3 class="movie-title">Joker</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <h3 class="movie-title">The Last of Us: Part II</h3>
+                                        <a href="https://www.imdb.com/title/tt6298000/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                                 <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <img src="./images/fans/games/fantasy.jpg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
-                                        <h3 class="movie-title">Avengers: Endgame</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <h3 class="movie-title">Final Fantasy VII Remake</h3>
+                                        <a href="https://www.imdb.com/title/tt6057416/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                                 <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
+                                    <img src="./images/fans/games/halo.jpg" alt="movie poster" class="movie-poster">
                                     <div class="movie-info">
-                                        <h3 class="movie-title">Knives Out</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Parasite</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Once Upon a Time... in Hollywood</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BY2QzYTQyYzItMzAwYi00YjZlLThjNTUtNzMyMDdkYzJiNWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">Little Women</h3>
-                                        <button class="btn-watch">More Info</button>
-                                    </div>
-                                </div>
-                                <div class="movie-card">
-                                    <img src="https://m.media-amazon.com/images/M/MV5BOGE4MmVjMDgtMzIzYy00NjEwLWJlODMtMDI1MGY2ZDlhMzE2XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="movie poster" class="movie-poster">
-                                    <div class="movie-info">
-                                        <h3 class="movie-title">The Witcher</h3>
-                                        <button class="btn-watch">More Info</button>
+                                        <h3 class="movie-title">Halo: Infinite</h3>
+                                        <a href="https://www.imdb.com/title/tt9437014/" target="blank"><button class="btn-watch btn-flip" data-back="ON IMDB" data-front="INFO"></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -359,6 +281,7 @@
                     <div class="col-12 "><img class="section-wick" src="./images/john_wick.jpg" alt="John Wick"></div>
             </div>
         </section>
+    <!-- YOUR SELECTION -->
     <section class="container">
         <div class="row justify-content-center">
             <div class="col-11 col-sm-10 col-lg-6">
@@ -395,16 +318,18 @@
                     <label for="exampleFormControlTextarea1" class="form-label text-white">Tell us your favourite song or album from the selected genre:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
+                <button type="reset" class="btn bg-magenta">Refresh</button>
                 <button type="submit" class="btn bg-magenta">Submit</button>
                 </form>
             </div>
         </div>
     </section>
+    <!-- LATEST NEWS -->
     <section class="container my-4">
         <h2 class="text-white ms-4">LATEST NEWS</h2>
-        <!-- Flickity HTML init -->
         <div class="news__slider">
         <div class="carousel" data-flickity='{ "groupCells": true }'>
+                <!-- FORZA HORIZON -->
                 <div class="news__card">
                     <div class="news__slide-area">
                         <div class="news__bg">
@@ -420,6 +345,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- SPENCER -->
                 <div class="news__card">
                     <div class="news__slide-area">
                         <div class="news__bg">
@@ -435,6 +361,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- VENOM -->
                 <div class="news__card">
                     <div class="news__slide-area">
                         <div class="news__bg">
@@ -450,6 +377,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- BLACK LOTUS -->
                 <div class="news__card">
                     <div class="news__slide-area">
                         <div class="news__bg">
@@ -465,6 +393,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- ELDEN RING -->
                 <div class="news__card">
                     <div class="news__slide-area">
                         <div class="news__bg">
@@ -480,6 +409,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- LIGHTYEAR -->
                 <div class="news__card">
                     <div class="news__slide-area">
                         <div class="news__bg">
@@ -495,6 +425,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- SING 2 -->
                 <div class="news__card">
                     <div class="news__slide-area">
                         <div class="news__bg">
@@ -510,6 +441,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- BRUISED -->
                 <div class="news__card">
                     <div class="news__slide-area">
                         <div class="news__bg">
@@ -528,25 +460,25 @@
             </div>
             </div>
     </section>
-    <footer><!-- Pie de pagina -->
-        <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="50" height="50"
-            viewBox="0 0 171 171"
-            style=" fill:#ffffff;"><g transform="translate(0.42999,0.42999) scale(0.995,0.995)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g id="original-icon 1" fill="#ffffff" stroke="#000000" stroke-linejoin="round"><path d="M157.32,30.78v109.44c0,9.4392 -7.6608,17.1 -17.1,17.1h-109.44c-9.4392,0 -17.1,-7.6608 -17.1,-17.1v-109.44c0,-9.4392 7.6608,-17.1 17.1,-17.1h109.44c9.4392,0 17.1,7.6608 17.1,17.1zM126.54,51.3c0,0 -3.762,-3.42 -13.68,-3.42c-13.68,0 -20.52,10.26 -20.52,23.94v10.26h-13.68v17.1h13.68v51.3h17.1v-51.3h13.68l3.42,-17.1h-17.1v-10.26c0,-5.13 2.9412,-6.84 10.26,-6.84h6.84z"></path></g><path d="M0,171.99626v-171.99626h171.99626v171.99626z" fill="none" stroke="none" stroke-linejoin="miter"></path><g id="original-icon" fill="#ffffff" stroke="none" stroke-linejoin="miter"><path d="M140.22,13.68h-109.44c-9.4392,0 -17.1,7.6608 -17.1,17.1v109.44c0,9.4392 7.6608,17.1 17.1,17.1h109.44c9.4392,0 17.1,-7.6608 17.1,-17.1v-109.44c0,-9.4392 -7.6608,-17.1 -17.1,-17.1zM126.54,64.98h-6.84c-7.3188,0 -10.26,1.71 -10.26,6.84v10.26h17.1l-3.42,17.1h-13.68v51.3h-17.1v-51.3h-13.68v-17.1h13.68v-10.26c0,-13.68 6.84,-23.94 20.52,-23.94c9.918,0 13.68,3.42 13.68,3.42z"></path></g><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path></g></g></svg></a>
-        <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="50" height="50"
-            viewBox="0 0 171 171"
-            style=" fill:#ffffff;"><g transform="translate(0.51599,0.51599) scale(0.994,0.994)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g fill="#ffffff" stroke="#000000" stroke-linejoin="round"><path d="M160.74,44.46v82.07658c0,18.85788 -15.34212,34.20342 -34.2,34.20342h-82.08c-18.85788,0 -34.2,-15.34554 -34.2,-34.20684v-82.06974c0,-18.85788 15.34212,-34.20342 34.2,-34.20342h82.08c18.85788,0 34.2,15.34212 34.2,34.2zM133.37658,60.20568c-3.4029,1.51164 -7.04862,2.52738 -10.88586,2.9925c3.9159,-2.35296 6.92208,-6.07734 8.33454,-10.50624c-3.6594,2.17512 -7.71894,3.75516 -12.03156,4.60674c-3.4542,-3.6936 -8.37558,-5.99868 -13.82364,-5.99868c-10.4652,0 -18.9468,8.50554 -18.9468,18.99468c0,1.4877 0.171,2.93436 0.4959,4.3263c-15.74226,-0.79344 -29.7027,-8.35506 -39.04956,-19.84626c-1.63134,2.81124 -2.56158,6.0705 -2.56158,9.55206c0,6.59034 3.33792,12.3975 8.42688,15.81066c-3.10878,-0.09918 -6.02604,-0.9576 -8.58078,-2.38032c0,0.07866 0,0.15732 0,0.2394c0,9.20664 6.52878,16.87428 15.18822,18.62532c-1.58346,0.44118 -3.25926,0.67032 -4.98636,0.67032c-1.22436,0 -2.4111,-0.1197 -3.57048,-0.342c2.41794,7.53768 9.40842,13.04046 17.6985,13.19094c-6.47748,5.0958 -14.64786,8.12592 -23.52618,8.12592c-1.53558,0 -3.03696,-0.0855 -4.51782,-0.26334c8.379,5.39334 18.34146,8.53632 29.03922,8.53632c34.8498,0 53.90946,-28.94346 53.90946,-54.03942c0,-0.82764 -0.02052,-1.64844 -0.05472,-2.45898c3.69702,-2.67786 6.9084,-6.02604 9.44262,-9.83592z"></path></g><path d="M0,171.99626v-171.99626h171.99626v171.99626z" fill="none" stroke="none" stroke-linejoin="miter"></path><g fill="#ffffff" stroke="none" stroke-linejoin="miter"><path d="M126.54,10.26h-82.08c-18.85788,0 -34.2,15.34554 -34.2,34.20342v82.06974c0,18.8613 15.34212,34.20684 34.2,34.20684h82.08c18.85788,0 34.2,-15.34554 34.2,-34.20342v-82.07658c0,-18.85788 -15.34212,-34.2 -34.2,-34.2zM123.93396,70.0416c0.0342,0.81054 0.05472,1.63134 0.05472,2.45898c0,25.09596 -19.05966,54.03942 -53.90946,54.03942c-10.69776,0 -20.66022,-3.14298 -29.03922,-8.53632c1.48086,0.17784 2.98224,0.26334 4.51782,0.26334c8.87832,0 17.0487,-3.03012 23.52618,-8.12592c-8.29008,-0.15048 -15.28056,-5.65326 -17.6985,-13.19094c1.15938,0.2223 2.34612,0.342 3.57048,0.342c1.7271,0 3.4029,-0.22914 4.98636,-0.67032c-8.65944,-1.75104 -15.18822,-9.41868 -15.18822,-18.62532c0,-0.08208 0,-0.16074 0,-0.2394c2.55474,1.42272 5.472,2.28114 8.58078,2.38032c-5.08896,-3.41316 -8.42688,-9.22032 -8.42688,-15.81066c0,-3.48156 0.93024,-6.74082 2.56158,-9.55206c9.34686,11.4912 23.3073,19.05282 39.04956,19.84626c-0.3249,-1.39194 -0.4959,-2.8386 -0.4959,-4.3263c0,-10.48914 8.4816,-18.99468 18.9468,-18.99468c5.44806,0 10.36944,2.30508 13.82364,5.99868c4.31262,-0.85158 8.37216,-2.43162 12.03156,-4.60674c-1.41246,4.4289 -4.41864,8.15328 -8.33454,10.50624c3.83724,-0.46512 7.48296,-1.48086 10.88586,-2.9925c-2.53422,3.80988 -5.7456,7.15806 -9.44262,9.83592z"></path></g><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path></g></g></svg></a>
-        <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="50" height="50"
-            viewBox="0 0 171 171"
-            style=" fill:#ffffff;"><g transform="translate(0.51599,0.51599) scale(0.994,0.994)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g fill="#000000" stroke="#000000" stroke-linejoin="round"><path d="M129.96,10.26c16.9632,0 30.78,13.8168 30.78,30.78v88.92c0,16.9632 -13.8168,30.78 -30.78,30.78h-88.92c-16.9632,0 -30.78,-13.8168 -30.78,-30.78v-88.92c0,-16.9632 13.8168,-30.78 30.78,-30.78zM126.54,30.78v10.26c0,1.881 1.539,3.42 3.42,3.42h10.26c1.881,0 3.42,-1.539 3.42,-3.42v-10.26c0,-1.881 -1.539,-3.42 -3.42,-3.42h-10.26c-1.881,0 -3.42,1.539 -3.42,3.42zM42.13547,58.14h-14.77547v68.4c0,9.4392 7.6608,17.1 17.1,17.1h82.08c9.4392,0 17.1,-7.6608 17.1,-17.1v-68.4h-14.77547c-9.0972,-14.364 -25.13593,-23.94 -43.36453,-23.94c-18.2286,0 -34.26733,9.576 -43.36453,23.94zM129.96,85.5c0,24.5214 -19.9386,44.46 -44.46,44.46c-24.5214,0 -44.46,-19.9386 -44.46,-44.46c0,-24.5214 19.9386,-44.46 44.46,-44.46c24.5214,0 44.46,19.9386 44.46,44.46zM54.72,85.5c0,16.9632 13.8168,30.78 30.78,30.78c16.9632,0 30.78,-13.8168 30.78,-30.78c0,-16.9632 -13.8168,-30.78 -30.78,-30.78c-16.9632,0 -30.78,13.8168 -30.78,30.78z"></path></g><path d="M0,171.99626v-171.99626h171.99626v171.99626z" fill="none" stroke="none" stroke-linejoin="miter"></path><g fill="#ffffff" stroke="none" stroke-linejoin="miter"><path d="M41.04,10.26c-16.9632,0 -30.78,13.8168 -30.78,30.78v88.92c0,16.9632 13.8168,30.78 30.78,30.78h88.92c16.9632,0 30.78,-13.8168 30.78,-30.78v-88.92c0,-16.9632 -13.8168,-30.78 -30.78,-30.78zM129.96,27.36h10.26c1.881,0 3.42,1.539 3.42,3.42v10.26c0,1.881 -1.539,3.42 -3.42,3.42h-10.26c-1.881,0 -3.42,-1.539 -3.42,-3.42v-10.26c0,-1.881 1.539,-3.42 3.42,-3.42zM85.5,34.2c18.2286,0 34.26733,9.576 43.36453,23.94h14.77547v68.4c0,9.4392 -7.6608,17.1 -17.1,17.1h-82.08c-9.4392,0 -17.1,-7.6608 -17.1,-17.1v-68.4h14.77547c9.0972,-14.364 25.13593,-23.94 43.36453,-23.94zM85.5,41.04c-24.5214,0 -44.46,19.9386 -44.46,44.46c0,24.5214 19.9386,44.46 44.46,44.46c24.5214,0 44.46,-19.9386 44.46,-44.46c0,-24.5214 -19.9386,-44.46 -44.46,-44.46zM85.5,54.72c16.9632,0 30.78,13.8168 30.78,30.78c0,16.9632 -13.8168,30.78 -30.78,30.78c-16.9632,0 -30.78,-13.8168 -30.78,-30.78c0,-16.9632 13.8168,-30.78 30.78,-30.78z"></path></g><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path></g></g></svg></a>
-        <p>All rights reserved</p>
-    </footer>
+    <footer><!-- FOOTER -->
+        <section class="container-xxl footer">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 171 171"
+                style=" fill:#ffffff;"><g transform="translate(0.42999,0.42999) scale(0.995,0.995)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g id="original-icon 1" fill="#ffffff" stroke="#000000" stroke-linejoin="round"><path d="M157.32,30.78v109.44c0,9.4392 -7.6608,17.1 -17.1,17.1h-109.44c-9.4392,0 -17.1,-7.6608 -17.1,-17.1v-109.44c0,-9.4392 7.6608,-17.1 17.1,-17.1h109.44c9.4392,0 17.1,7.6608 17.1,17.1zM126.54,51.3c0,0 -3.762,-3.42 -13.68,-3.42c-13.68,0 -20.52,10.26 -20.52,23.94v10.26h-13.68v17.1h13.68v51.3h17.1v-51.3h13.68l3.42,-17.1h-17.1v-10.26c0,-5.13 2.9412,-6.84 10.26,-6.84h6.84z"></path></g><path d="M0,171.99626v-171.99626h171.99626v171.99626z" fill="none" stroke="none" stroke-linejoin="miter"></path><g id="original-icon" fill="#ffffff" stroke="none" stroke-linejoin="miter"><path d="M140.22,13.68h-109.44c-9.4392,0 -17.1,7.6608 -17.1,17.1v109.44c0,9.4392 7.6608,17.1 17.1,17.1h109.44c9.4392,0 17.1,-7.6608 17.1,-17.1v-109.44c0,-9.4392 -7.6608,-17.1 -17.1,-17.1zM126.54,64.98h-6.84c-7.3188,0 -10.26,1.71 -10.26,6.84v10.26h17.1l-3.42,17.1h-13.68v51.3h-17.1v-51.3h-13.68v-17.1h13.68v-10.26c0,-13.68 6.84,-23.94 20.52,-23.94c9.918,0 13.68,3.42 13.68,3.42z"></path></g><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path></g></g></svg></a>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 171 171"
+                style=" fill:#ffffff;"><g transform="translate(0.51599,0.51599) scale(0.994,0.994)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g fill="#ffffff" stroke="#000000" stroke-linejoin="round"><path d="M160.74,44.46v82.07658c0,18.85788 -15.34212,34.20342 -34.2,34.20342h-82.08c-18.85788,0 -34.2,-15.34554 -34.2,-34.20684v-82.06974c0,-18.85788 15.34212,-34.20342 34.2,-34.20342h82.08c18.85788,0 34.2,15.34212 34.2,34.2zM133.37658,60.20568c-3.4029,1.51164 -7.04862,2.52738 -10.88586,2.9925c3.9159,-2.35296 6.92208,-6.07734 8.33454,-10.50624c-3.6594,2.17512 -7.71894,3.75516 -12.03156,4.60674c-3.4542,-3.6936 -8.37558,-5.99868 -13.82364,-5.99868c-10.4652,0 -18.9468,8.50554 -18.9468,18.99468c0,1.4877 0.171,2.93436 0.4959,4.3263c-15.74226,-0.79344 -29.7027,-8.35506 -39.04956,-19.84626c-1.63134,2.81124 -2.56158,6.0705 -2.56158,9.55206c0,6.59034 3.33792,12.3975 8.42688,15.81066c-3.10878,-0.09918 -6.02604,-0.9576 -8.58078,-2.38032c0,0.07866 0,0.15732 0,0.2394c0,9.20664 6.52878,16.87428 15.18822,18.62532c-1.58346,0.44118 -3.25926,0.67032 -4.98636,0.67032c-1.22436,0 -2.4111,-0.1197 -3.57048,-0.342c2.41794,7.53768 9.40842,13.04046 17.6985,13.19094c-6.47748,5.0958 -14.64786,8.12592 -23.52618,8.12592c-1.53558,0 -3.03696,-0.0855 -4.51782,-0.26334c8.379,5.39334 18.34146,8.53632 29.03922,8.53632c34.8498,0 53.90946,-28.94346 53.90946,-54.03942c0,-0.82764 -0.02052,-1.64844 -0.05472,-2.45898c3.69702,-2.67786 6.9084,-6.02604 9.44262,-9.83592z"></path></g><path d="M0,171.99626v-171.99626h171.99626v171.99626z" fill="none" stroke="none" stroke-linejoin="miter"></path><g fill="#ffffff" stroke="none" stroke-linejoin="miter"><path d="M126.54,10.26h-82.08c-18.85788,0 -34.2,15.34554 -34.2,34.20342v82.06974c0,18.8613 15.34212,34.20684 34.2,34.20684h82.08c18.85788,0 34.2,-15.34554 34.2,-34.20342v-82.07658c0,-18.85788 -15.34212,-34.2 -34.2,-34.2zM123.93396,70.0416c0.0342,0.81054 0.05472,1.63134 0.05472,2.45898c0,25.09596 -19.05966,54.03942 -53.90946,54.03942c-10.69776,0 -20.66022,-3.14298 -29.03922,-8.53632c1.48086,0.17784 2.98224,0.26334 4.51782,0.26334c8.87832,0 17.0487,-3.03012 23.52618,-8.12592c-8.29008,-0.15048 -15.28056,-5.65326 -17.6985,-13.19094c1.15938,0.2223 2.34612,0.342 3.57048,0.342c1.7271,0 3.4029,-0.22914 4.98636,-0.67032c-8.65944,-1.75104 -15.18822,-9.41868 -15.18822,-18.62532c0,-0.08208 0,-0.16074 0,-0.2394c2.55474,1.42272 5.472,2.28114 8.58078,2.38032c-5.08896,-3.41316 -8.42688,-9.22032 -8.42688,-15.81066c0,-3.48156 0.93024,-6.74082 2.56158,-9.55206c9.34686,11.4912 23.3073,19.05282 39.04956,19.84626c-0.3249,-1.39194 -0.4959,-2.8386 -0.4959,-4.3263c0,-10.48914 8.4816,-18.99468 18.9468,-18.99468c5.44806,0 10.36944,2.30508 13.82364,5.99868c4.31262,-0.85158 8.37216,-2.43162 12.03156,-4.60674c-1.41246,4.4289 -4.41864,8.15328 -8.33454,10.50624c3.83724,-0.46512 7.48296,-1.48086 10.88586,-2.9925c-2.53422,3.80988 -5.7456,7.15806 -9.44262,9.83592z"></path></g><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path></g></g></svg></a>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 171 171"
+                style=" fill:#ffffff;"><g transform="translate(0.51599,0.51599) scale(0.994,0.994)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g fill="#000000" stroke="#000000" stroke-linejoin="round"><path d="M129.96,10.26c16.9632,0 30.78,13.8168 30.78,30.78v88.92c0,16.9632 -13.8168,30.78 -30.78,30.78h-88.92c-16.9632,0 -30.78,-13.8168 -30.78,-30.78v-88.92c0,-16.9632 13.8168,-30.78 30.78,-30.78zM126.54,30.78v10.26c0,1.881 1.539,3.42 3.42,3.42h10.26c1.881,0 3.42,-1.539 3.42,-3.42v-10.26c0,-1.881 -1.539,-3.42 -3.42,-3.42h-10.26c-1.881,0 -3.42,1.539 -3.42,3.42zM42.13547,58.14h-14.77547v68.4c0,9.4392 7.6608,17.1 17.1,17.1h82.08c9.4392,0 17.1,-7.6608 17.1,-17.1v-68.4h-14.77547c-9.0972,-14.364 -25.13593,-23.94 -43.36453,-23.94c-18.2286,0 -34.26733,9.576 -43.36453,23.94zM129.96,85.5c0,24.5214 -19.9386,44.46 -44.46,44.46c-24.5214,0 -44.46,-19.9386 -44.46,-44.46c0,-24.5214 19.9386,-44.46 44.46,-44.46c24.5214,0 44.46,19.9386 44.46,44.46zM54.72,85.5c0,16.9632 13.8168,30.78 30.78,30.78c16.9632,0 30.78,-13.8168 30.78,-30.78c0,-16.9632 -13.8168,-30.78 -30.78,-30.78c-16.9632,0 -30.78,13.8168 -30.78,30.78z"></path></g><path d="M0,171.99626v-171.99626h171.99626v171.99626z" fill="none" stroke="none" stroke-linejoin="miter"></path><g fill="#ffffff" stroke="none" stroke-linejoin="miter"><path d="M41.04,10.26c-16.9632,0 -30.78,13.8168 -30.78,30.78v88.92c0,16.9632 13.8168,30.78 30.78,30.78h88.92c16.9632,0 30.78,-13.8168 30.78,-30.78v-88.92c0,-16.9632 -13.8168,-30.78 -30.78,-30.78zM129.96,27.36h10.26c1.881,0 3.42,1.539 3.42,3.42v10.26c0,1.881 -1.539,3.42 -3.42,3.42h-10.26c-1.881,0 -3.42,-1.539 -3.42,-3.42v-10.26c0,-1.881 1.539,-3.42 3.42,-3.42zM85.5,34.2c18.2286,0 34.26733,9.576 43.36453,23.94h14.77547v68.4c0,9.4392 -7.6608,17.1 -17.1,17.1h-82.08c-9.4392,0 -17.1,-7.6608 -17.1,-17.1v-68.4h14.77547c9.0972,-14.364 25.13593,-23.94 43.36453,-23.94zM85.5,41.04c-24.5214,0 -44.46,19.9386 -44.46,44.46c0,24.5214 19.9386,44.46 44.46,44.46c24.5214,0 44.46,-19.9386 44.46,-44.46c0,-24.5214 -19.9386,-44.46 -44.46,-44.46zM85.5,54.72c16.9632,0 30.78,13.8168 30.78,30.78c0,16.9632 -13.8168,30.78 -30.78,30.78c-16.9632,0 -30.78,-13.8168 -30.78,-30.78c0,-16.9632 13.8168,-30.78 30.78,-30.78z"></path></g><path d="" fill="none" stroke="none" stroke-linejoin="miter"></path></g></g></svg></a>
+            <p>All rights reserved</p>
+        </section>
+    </footer><!-- FOOTER END-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="./js/fans.js"></script>
-        <!-- owl carousel JS -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-</body>
+</body><!-- BODY END-->
 </html>

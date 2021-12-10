@@ -1,20 +1,30 @@
 /**
- *** CSS Indexing ***
- * GENERAL STYLES CSS
- * HEADER CSS
- * FOOTER CSS
- * PAGES CSS
- * MEDIA QUERIES CSS
- * ANIMATIONS CSS
- * FAN'S SECTION CSS
- * NEWS SECTION CSS
-
+***** CSS INDEXING *****
+************************
+** GENERAL STYLES CSS **
+************************ 
+****** HEADER CSS ******
+************************
+****** FOOTER CSS ******
+************************ 
+******* PAGES CSS ******
+************************ 
+** MEDIA QUERIES CSS ***
+************************
+**** ANIMATIONS CSS ****
+************************ 
+** FAN'S SECTION CSS ***
+************************
+*** NEWS SECTION CSS ***
+************************
 
 
 **/
 /* ############################################ */
 /* ########### GENERAL STYLES START ########### */
-/* ############################################ */
+/* ############################################ 
+
+*/
 /* ***************************** LABELS *******************************/
 body {
   font-family: 'Poppins', sans-serif;
@@ -42,14 +52,8 @@ section {
 .text-magenta {
   color: #ff1e95; }
 
-.text-cyan {
-  color: #0dbfec; }
-
 .bg-cyan {
   background-color: #0dbfec !important; }
-
-.text-magenta {
-  color: #ff1e95; }
 
 .text-cyan {
   color: #0dbfec; }
@@ -83,12 +87,14 @@ section {
 
 /* ########################################## */
 /* ########### GENERAL STYLES END ########### */
-/* ##########################################
+/* ########################################## 
 
 */
 /* #################################### */
 /* ########### HEADER START ########### */
-/* #################################### */
+/* #################################### 
+
+*/
 .header-home, .header-other {
   padding: 5px 40px;
   text-shadow: 0 0 20px black, 1px 1px 3px black, -1px -1px 3px black;
@@ -107,9 +113,6 @@ section {
   background-image: url("../images/blade_runner.jpg");
   background-position: left; }
 
-.dropdown-menu-center {
-  position: absolute; }
-
 .navbar-dark {
   /* Bootstrap modificator */
   color: white;
@@ -122,24 +125,27 @@ section {
 /* ################################## 
 
 */
-/* ############################ ###### */
-/* ########### FOOTER START ########### */
 /* ################################### */
-footer {
+/* ########### FOOTER START ########## */
+/* ################################### 
+
+*/
+.footer {
+  width: 100vw;
   height: 199px;
   padding-top: 50px;
   text-align: center;
   background-image: url("../images/footer.jpg");
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   text-shadow: 0 0 60px black,0 0 50px black,0 0 40px black, 0 0 30px black, 1px 1px 3px black, -1px -1px 3px black; }
 
-/* ############################ ###### */
-/* ########### FOOTER END ########### */
+/* ################################### */
+/* ########### FOOTER END ############ */
 /* ################################### 
 
 */
-/* ############################ ###### */
+/* ################################### */
 /* ########### PAGES START ########### */
 /* ################################### 
 
@@ -150,7 +156,9 @@ footer {
   padding: 0;
   margin: 0; }
 
-/* ####### INDEX PAGE END ###### */
+/* ####### INDEX PAGE END ###### 
+
+*/
 /* ####### COMPOSERS PAGE START ###### */
 .composer {
   box-shadow: 0px 0px 150px -45px #0dbfec; }
@@ -188,6 +196,7 @@ footer {
     color: #0dbfec;
     font-size: 16px; }
   .composer__profile-photo {
+    border-radius: 3px;
     width: 200px;
     height: 120px;
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5); }
@@ -212,8 +221,7 @@ footer {
     background-size: cover;
     border-radius: 11px; }
 
-/* ####### COMPOSERS PAGE END ###### 
-
+/* ####### COMPOSERS PAGE END ######
 
 */
 /* ####### MOVIES PAGE START ###### */
@@ -222,13 +230,12 @@ footer {
   .movie:hover {
     box-shadow: 0px 0px 100px -55px #0dbfec; }
 
-/* ####### MOVIES PAGE END ###### 
-
+/* ####### MOVIES PAGE END ######
 
 */
 /* ################################### */
-/* ########### PAGES END ########### */
-/* ################################### 
+/* ########### PAGES END ############# */
+/* ###################################
 
 */
 /* ########################################### */
@@ -383,10 +390,8 @@ footer {
       font-size: 22px;
       margin: 0px 20%;
       padding-top: 5%; }
-  h3 {
-    line-height: 0.8; }
-    h3 a {
-      font-size: 60%; }
+  h3 a {
+    font-size: 60%; }
   .news {
     /* NEWS SECTION */ }
     .news__content {
@@ -420,9 +425,11 @@ footer {
 */
 /* ######################################## */
 /* ########### ANIMATIONS START ########### */
-/* ######################################## */
+/* ######################################## 
+
+*/
 /* --- GALLERY SCALE ---*/
-.scale-img:hover {
+.scale-img:active {
   transform: scale(1.2, 1.2);
   box-shadow: 0px 0px 100px 30px black; }
 
@@ -492,12 +499,16 @@ footer {
     filter: blur(0px);
     opacity: 1; } }
 
-/* ##################################### */
+/* ###################################### */
 /* ########### ANIMATIONS END ########### */
 /* ###################################### 
 
 */
-/* ####### FAN'S SELECTION START ###### */
+/* ################################## */
+/* ########### FANS START ########### */
+/* ################################## 
+
+*/
 .main-header {
   color: lawngreen;
   display: block;
@@ -542,22 +553,22 @@ footer {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
 
 .movie-list::-webkit-scrollbar-thumb {
-  background-color: #3d3d3d;
-  outline: 1px solid slategrey;
+  background-color: #2f2f44;
+  outline: 1px solid #0dbfec;
   border-radius: 50px; }
 
 .movie-card {
   background: linear-gradient(135deg, #0dbfec 0%, #0dbfec 34%, #ff1e95 80%, #ff1e95 100%);
   border-radius: 10px;
   width: 182px;
-  box-shadow: 0px 5px 10px #111111;
+  box-shadow: 0px 2px 8px #0dbfec;
   cursor: pointer;
   margin: 20px 15px;
   position: relative;
   transition: all 1s; }
 
 .movie-card:hover {
-  box-shadow: 0px 10px 20px #000000;
+  box-shadow: 0px 5px 20px #ff1e95;
   transform: scale(1.08); }
 
 .movie-poster {
@@ -586,8 +597,16 @@ footer {
   bottom: 0;
   margin-bottom: 5px; }
 
-/* ####### FAN'S SELECTION END ####### */
-/* ####### LATEST NEWS START ####### */
+/* ################################ */
+/* ########### FANS END ########### */
+/* ################################ 
+
+*/
+/* ######################################### */
+/* ########### LATEST NEWS START ########### */
+/* ######################################### 
+
+*/
 .news__nav button:hover {
   color: #0dbfec; }
 
@@ -656,6 +675,11 @@ footer {
   z-index: 1; }
 
 .flickity-prev-next-button {
+  /* FLICKITY MODIFIER */
   z-index: 2; }
 
-/* ####### LATEST NEWS END ####### */
+/* ####################################### */
+/* ########### LATEST NEWS END ########### */
+/* ####################################### 
+
+*/
