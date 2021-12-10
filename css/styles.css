@@ -156,6 +156,12 @@ section {
   padding: 0;
   margin: 0; }
 
+.btn-form:hover {
+  background-color: #0dbfec !important; }
+
+.btn-form:active {
+  color: white; }
+
 /* ####### INDEX PAGE END ###### 
 
 */

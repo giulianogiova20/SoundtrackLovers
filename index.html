@@ -289,17 +289,18 @@
             <p>Send us your favourite soundtrack</p>
             <form>
                 <div class="mb-2">
-                    <label for="Name" class="form-label text-white">Name and Lastname</label>
+                    <label for="Name" class="form-label text-white" placeholder="John Doe" required>Name and Lastname</label>
                     <input type="text" class="form-control" id="validationCustom01">
                 </div>
                 <div class="mb-2">
                     <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-2">
-                    <label for="exampleInputPassword1" class="form-label text-white">Phone</label>
+                    <label for="exampleInputPassword1" class="form-label text-white">Phone (optional)</label>
                     <input type="tel" class="form-control" id="exampleInputPassword1">
+                    <div id="emailHelp" class="form-text">We'll never share your phone with anyone else.</div>
                 </div>
                 <div class="mb-2 form-check">
                     <label class="form-check-label text-white" for="exampleCheck1">Do you want to subscribe to newsletter?</label>
@@ -307,19 +308,19 @@
                 </div>
                 <hr class="bg-white"/>
                 <div class="mb-2">
-                    <select class="form-select-sm" aria-label="Default select example">
+                    <select class="form-select-sm" aria-label="Default select example" required>
                         <option selected>Select genre</option>
                         <option value="1">Movies</option>
                         <option value="2">Games</option>
                         <option value="3">Series</option>
-                        </select>
+                    </select>
                 </div>
                 <div class="mb-2">
-                    <label for="exampleFormControlTextarea1" class="form-label text-white">Tell us your favourite song or album from the selected genre:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1" class="form-label text-white" placeholder="Leave a comment here">Tell us your favourite song or album from the selected genre:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                     </div>
-                <button type="reset" class="btn bg-magenta">Refresh</button>
-                <button type="submit" class="btn bg-magenta">Submit</button>
+                <button type="reset" class="btn btn-form bg-magenta text-white">Refresh</button>
+                <button type="submit" class="btn btn-form bg-magenta text-white">Submit</button>
                 </form>
             </div>
         </div>
