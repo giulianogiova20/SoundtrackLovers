@@ -109,7 +109,7 @@
             left: 240px;
             text-align: left;
             h4{
-                width: 450px;
+                width: 400px;
                 font-size: 18px;
             }
         }
@@ -140,7 +140,7 @@
 @media (min-width: 769px) and (max-width: 1023px){
     .header{
         &-home{
-            height: 500px;
+            height: 550px;
         }
         &-other{
             height: 400px;
@@ -167,7 +167,7 @@
             left: 160px;
             text-align: left;
             h4{
-                width: 600px;
+                width: 520px;
             }
         }
         &__date{

@@ -330,7 +330,7 @@ section {
       left: 240px;
       text-align: left; }
       .news__content h4 {
-        width: 450px;
+        width: 400px;
         font-size: 18px; }
     .news__date {
       left: 240px; }
@@ -351,7 +351,7 @@ section {
 /* ############################ TABLET GRID V2############################# */
 @media (min-width: 769px) and (max-width: 1023px) {
   .header-home, .header-other {
-    height: 500px; }
+    height: 550px; }
   .header-other {
     height: 400px; }
   .quote {
@@ -372,7 +372,7 @@ section {
       left: 160px;
       text-align: left; }
       .news__content h4 {
-        width: 600px; }
+        width: 520px; }
     .news__date {
       left: 160px; }
   .composer {
@@ -628,7 +628,7 @@ section {
 
 .news__content {
   position: absolute;
-  text-shadow: 0px 0px 40px black, 0px 0px 20px black, 0px 0px 5px black; }
+  text-shadow: 2px 2px 2px black; }
   .news__content a:hover {
     color: #ff1e95; }
 
