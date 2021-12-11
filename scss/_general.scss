@@ -1,0 +1,89 @@
+/* ############################################ */
+/* ########### GENERAL STYLES START ########### */
+/* ############################################ 
+
+*/
+
+/* ***************************** LABELS *******************************/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #1d1d29;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 60px;
+}
+
+p{
+    color:white;
+    font-size: 80%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+section{
+    padding: 20px 0px;
+}
+
+/* **************************** CLASSES *******************************/
+
+/* -------------COLORS-------- */
+
+$magenta: #ff1e95;
+$cyan: #0dbfec;
+
+$bg-nav:(
+    magenta: $magenta,
+    cyan: $cyan,
+);
+
+@each $color, $bg in $bg-nav {
+    .bg-#{$color} {
+        background-color: $bg !important;
+    }
+    .text-#{$color} {
+        color: $bg;
+    }
+}
+
+/* --- BOOTSRAP MODIFICATORS --- */
+
+.container-xxl{ 
+    padding: 0;
+}
+
+.col-12{ 
+    padding: 0px;
+}
+
+
+/* --- DROPDOWN MENU ON PAGES --- */
+.selector-hv{ 
+    button:hover{
+    background-color: black;
+    color: white !important;
+    }
+    button:active{
+    background-color: black !important;
+    }
+}
+
+.project-item{
+
+    list-style: url("../images/project-icon.png");
+    a{
+    display: table-cell;
+    vertical-align: middle;
+    color: $cyan;
+    &:hover{color: $magenta;}
+    }
+}
+
+/* ########################################## */
+/* ########### GENERAL STYLES END ########### */
+/* ########################################## 
+
+*/

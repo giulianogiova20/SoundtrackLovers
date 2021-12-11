@@ -1,0 +1,135 @@
+/* ################################### */
+/* ########### PAGES START ########### */
+/* ################################### 
+
+*/
+
+
+/* ####### INDEX PAGE START ###### */
+
+.section-wick{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-form{
+    &:hover{
+    background-color: $cyan !important;
+    }
+    &:active{
+    color: white;
+    }
+}
+
+/* ####### INDEX PAGE END ###### 
+
+*/
+
+
+/* ####### COMPOSERS PAGE START ###### */
+
+.composer{
+    box-shadow: 0px 0px 150px -45px $cyan;
+    &:hover{
+    box-shadow: 0px 0px 120px -55px $magenta;
+    }
+
+    &__card{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 10px;
+        transition: all 0.4s;
+        font-size: 14px;
+        font-weight: 400;
+        &:hover{
+            transform: scale(1.02);
+            transition: all 0.4s;
+        }
+    }
+    &__info-section{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-blend-mode: multiply;
+        z-index: 2;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__header{
+        h2{
+            color: #fff;
+        }
+        h3{
+            color: $magenta;
+            font-size: 18px;
+        }
+        h4{
+            margin: 2px 0px;
+            color: $cyan;
+            font-size: 16px;
+        }
+    }
+    &__profile-photo{
+        border-radius: 3px;
+        width: 200px;
+        height: 120px;
+        box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
+    }
+    &__back1{
+        background: url("../images/composers/john_williams2.jpg");
+        background-position: center;
+    }
+
+    &__back2{
+        background: url("../images/composers/hans_zimmer2.jpg");
+        background-position: center;
+    }
+
+    &__back3{
+        background: url("../images/composers/james_horner2.jpg");
+        background-position: center;
+    }
+
+    &__back4{
+        background: url("../images/composers/howard_shore2.jpg");
+        background-position: center;
+    }
+    &__blur-back{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        height: 100%; right: 0;
+        background-size: cover;
+        border-radius: 11px;
+        }
+}
+
+
+/* ####### COMPOSERS PAGE END ######
+
+*/
+
+
+/* ####### MOVIES PAGE START ###### */
+
+.movie{
+    box-shadow: 0px 0px 80px -45px $magenta;
+    &:hover{
+    box-shadow: 0px 0px 100px -55px $cyan;
+    }
+}
+
+/* ####### MOVIES PAGE END ######
+
+*/
+
+/* ################################### */
+/* ########### PAGES END ############# */
+/* ###################################
+
+*/

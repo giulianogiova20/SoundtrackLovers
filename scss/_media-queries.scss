@@ -1,0 +1,269 @@
+/* ########################################### */
+/* ########### MEDIA QUERIES START ########### */
+/* ########################################### 
+
+*/
+
+/* ############################ MOBILE GRID ############################# */
+@media (max-width: 599px){
+    
+    .header{
+        &-home{
+            height: 650px;
+        }
+        &-other{
+            height: 500px;
+        }
+    }
+
+    .quote{ /* QUOTE SECTION */
+        &__text-size{   
+            text-align: center;
+            font-size: 13px;
+            padding: 8px 8px;
+            }
+    }
+
+    h3{ 
+        line-height: 0.8;
+        a{
+        font-size: 60%;
+        }
+    }
+
+    .news{ /* NEWS SECTION */
+        &__card{
+            width: 500px;
+        }
+        &__content{
+            width: 250px;
+            bottom: 15px;
+            right: 300px;
+            left: 320px;
+            text-align: left;
+            h4{
+                width: 280px;
+                font-size: 16px;
+            }
+        }
+        &__date{
+           right: 320px;
+           left: 320px;
+        }
+    }
+
+    .composer{ /* COMPOSERS SECTION */
+        &__card{ 
+        height: auto;
+        margin: 50px auto; 
+        min-height: 350px;
+        }
+        &__header{
+            margin: 230px 80px 10px 80px;
+        }
+        &__info-section{
+            background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
+        }
+        &__blur-back{
+            width: 100%;
+            background-position: 50% 50% !important;  
+          }
+    }
+}
+
+/* ############################ TABLET GRID V1############################# */
+@media (min-width: 600px) and (max-width: 768px){
+    .header{
+        &-home{
+            height: 650px;
+        }
+        &-other{
+            height: 500px;
+        }
+    }
+
+    .quote{ /* QUOTE SECTION */
+        &__text-size{     
+            text-align: center; 
+            padding: 9px 9px;
+            margin: 7% 0;
+            font-size: 15px;
+            }
+    }
+
+    h3{ 
+        line-height: 0.8;
+        a{
+        font-size: 65%;
+        }
+    }
+
+    .news{ /* NEWS SECTION */
+        &__card{
+            max-width: 900px;
+        }
+        &__content{
+            width: 250px;
+            bottom: 15px;
+            right: 300px;
+            left: 240px;
+            text-align: left;
+            h4{
+                width: 450px;
+                font-size: 18px;
+            }
+        }
+        &__date{
+            left:240px;
+        }
+    }
+    .composer{ /* COMPOSERS SECTION */
+        &__card{ 
+        height: auto;
+        margin: 70px auto; 
+        min-height: 350px;
+        }
+        &__header{
+            width: 40%;
+            margin: 120px 0px 0px 100px;
+        }
+        &__info-section{
+            background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
+        }
+        &__blur-back{
+            width: 100%;
+          }
+    }
+}
+
+/* ############################ TABLET GRID V2############################# */
+@media (min-width: 769px) and (max-width: 1023px){
+    .header{
+        &-home{
+            height: 500px;
+        }
+        &-other{
+            height: 400px;
+        }
+    }
+
+    .quote{ /* QUOTE SECTION */
+        &__text-size{   
+            text-align: center; 
+            font-size: 15px;  
+            padding: 10px 10px;
+            margin: 7% 0;
+            }
+    }
+
+    .news{ /* NEWS SECTION */
+        &__card{
+            max-width: 800px;
+        }
+        &__content{
+            width: 400px;
+            bottom: 15px;
+            right: 300px;
+            left: 160px;
+            text-align: left;
+            h4{
+                width: 600px;
+            }
+        }
+        &__date{
+            left:160px;
+        }
+    }
+    .composer{ /* COMPOSERS SECTION */
+        &__card{ 
+        height: auto;
+        margin: 20px 0px 60px 0px;  
+        min-height: 350px;
+        }
+        &__header{
+            width: 40%;
+            margin: 120px 0px 0px 100px;
+        }
+        &__info-section{
+            background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
+        }
+        &__blur-back{
+            width: 100%;
+          }
+    }
+}
+
+/* ############################ DESKTOP GRID ############################# */
+@media (min-width: 1024px){
+    .header{
+        padding: 25px;
+        &-home{
+            height: 800px;
+        }
+        &-other{
+            height: 600px;
+        }
+    };
+
+    h1{
+        padding-top: 100px;
+    }
+
+    .quote{ /* QUOTE SECTION */
+        &__text-size{ 
+            text-align: center;
+            font-size: 22px;
+            padding: 10px 10px;
+            margin: 10% 0;
+            }
+    }
+
+    h3{ 
+        a{
+        font-size: 60%;
+        }
+    }
+
+    .news{ /* NEWS SECTION */
+        &__content{
+            width: 700px;
+            bottom: 15px;
+            right: 20px;
+            left: 60px;
+            text-align: left;
+            h4{
+                width: 750px;
+            }
+        }
+        &__date{
+           left: 60px;
+        }
+    }
+
+    .composer{ /* COMPOSERS SECTION */
+        &__card{
+            margin: 20px 0px 60px 0px; 
+            height: 350px;
+        }
+        &__header{
+        width: 60%;
+        margin: 0px 0px 0px 20px;
+        }
+        &__info-section{
+            background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
+        }
+        &__blur-back{
+            width: 80%;
+            background-position: -100% 10% !important;  
+        }
+
+    }
+      
+
+}
+
+/* ######################################### */
+/* ########### MEDIA QUERIES END ########### */
+/* ######################################### 
+
+*/

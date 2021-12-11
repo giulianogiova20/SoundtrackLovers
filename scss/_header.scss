@@ -1,0 +1,60 @@
+/* #################################### */
+/* ########### HEADER START ########### */
+/* #################################### 
+
+*/
+
+.header{ 
+    &-home{
+    padding: 5px 40px;
+    text-shadow: 0 0 20px black, 1px 1px 3px black, -1px -1px 3px black;
+    background-image: url("../images/header_home.jpg");
+    background-size: cover;
+    background-position: 42% 10%;
+    background-repeat: no-repeat;
+    width: 100vw;
+        p{text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+            border-radius: 10px;
+        }
+        nav{
+            font-weight: bold;
+            li {
+                a:hover{
+                background-color: $cyan !important;
+                }
+            }
+        }
+    }
+    &-blurry{
+        backdrop-filter: blur(20px) opacity(90%);
+        border-radius: 15px;
+    }
+
+    &-other{
+    @extend .header-home;
+    background-image: url("../images/blade_runner.jpg");
+    background-position: 63%;
+    }
+}
+
+.nav-pills .active{
+    background-color: $magenta !important;  
+}
+
+.navbar-dark{ /* Bootstrap modificator */
+    color: white;
+    outline: white;
+    &:hover{
+        color: $cyan;
+    }
+}
+
+
+
+/* ################################## */
+/* ########### HEADER END ########### */
+/* ################################## 
+
+*/
+
+

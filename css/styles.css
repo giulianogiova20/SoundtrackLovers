@@ -73,9 +73,6 @@ section {
 .selector-hv button:active {
   background-color: black !important; }
 
-.nav-pills .active {
-  background-color: #0dbfec !important; }
-
 .project-item {
   list-style: url("../images/project-icon.png"); }
   .project-item a {
@@ -98,20 +95,29 @@ section {
 .header-home, .header-other {
   padding: 5px 40px;
   text-shadow: 0 0 20px black, 1px 1px 3px black, -1px -1px 3px black;
-  background-image: url("../images/jedi_order.jpg");
+  background-image: url("../images/header_home.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 42% 10%;
+  background-repeat: no-repeat;
   width: 100vw; }
   .header-home p, .header-other p {
-    text-shadow: 0 0 40px black,0 0 30px black, 1px 1px 3px black, -1px -1px 3px black; }
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    border-radius: 10px; }
   .header-home nav, .header-other nav {
     font-weight: bold; }
-    .header-home nav a:hover, .header-other nav a:hover {
-      color: #ff1e95 !important; }
+    .header-home nav li a:hover, .header-other nav li a:hover {
+      background-color: #0dbfec !important; }
+
+.header-blurry {
+  backdrop-filter: blur(20px) opacity(90%);
+  border-radius: 15px; }
 
 .header-other {
   background-image: url("../images/blade_runner.jpg");
-  background-position: left; }
+  background-position: 63%; }
+
+.nav-pills .active {
+  background-color: #ff1e95 !important; }
 
 .navbar-dark {
   /* Bootstrap modificator */
@@ -132,11 +138,12 @@ section {
 */
 .footer {
   width: 100vw;
-  height: 199px;
-  padding-top: 50px;
+  height: 200px;
+  padding-top: 60px;
   text-align: center;
   background-image: url("../images/footer.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   text-shadow: 0 0 60px black,0 0 50px black,0 0 40px black, 0 0 30px black, 1px 1px 3px black, -1px -1px 3px black; }
 
@@ -259,9 +266,8 @@ section {
     /* QUOTE SECTION */ }
     .quote__text-size {
       text-align: center;
-      margin: 0px 5%;
       font-size: 13px;
-      padding-top: 1%; }
+      padding: 8px 8px; }
   h3 {
     line-height: 0.8; }
     h3 a {
@@ -277,7 +283,8 @@ section {
       left: 320px;
       text-align: left; }
       .news__content h4 {
-        width: 300px; }
+        width: 280px;
+        font-size: 16px; }
     .news__date {
       right: 320px;
       left: 320px; }
@@ -305,7 +312,8 @@ section {
     /* QUOTE SECTION */ }
     .quote__text-size {
       text-align: center;
-      margin: 0px 10%;
+      padding: 9px 9px;
+      margin: 7% 0;
       font-size: 15px; }
   h3 {
     line-height: 0.8; }
@@ -319,12 +327,13 @@ section {
       width: 250px;
       bottom: 15px;
       right: 300px;
-      left: 230px;
+      left: 240px;
       text-align: left; }
       .news__content h4 {
-        width: 450px; }
+        width: 450px;
+        font-size: 18px; }
     .news__date {
-      left: 230px; }
+      left: 240px; }
   .composer {
     /* COMPOSERS SECTION */ }
     .composer__card {
@@ -340,7 +349,7 @@ section {
       width: 100%; } }
 
 /* ############################ TABLET GRID V2############################# */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   .header-home, .header-other {
     height: 500px; }
   .header-other {
@@ -349,22 +358,23 @@ section {
     /* QUOTE SECTION */ }
     .quote__text-size {
       text-align: center;
-      margin: 0px 10%;
-      font-size: 15px; }
+      font-size: 15px;
+      padding: 10px 10px;
+      margin: 7% 0; }
   .news {
     /* NEWS SECTION */ }
     .news__card {
-      max-width: 900px; }
+      max-width: 800px; }
     .news__content {
       width: 400px;
       bottom: 15px;
       right: 300px;
-      left: 150px;
+      left: 160px;
       text-align: left; }
       .news__content h4 {
-        width: 560px; }
+        width: 600px; }
     .news__date {
-      left: 150px; }
+      left: 160px; }
   .composer {
     /* COMPOSERS SECTION */ }
     .composer__card {
@@ -380,7 +390,7 @@ section {
       width: 100%; } }
 
 /* ############################ DESKTOP GRID ############################# */
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .header {
     padding: 25px; }
     .header-home, .header-other {
@@ -394,14 +404,14 @@ section {
     .quote__text-size {
       text-align: center;
       font-size: 22px;
-      margin: 0px 20%;
-      padding-top: 5%; }
+      padding: 10px 10px;
+      margin: 10% 0; }
   h3 a {
     font-size: 60%; }
   .news {
     /* NEWS SECTION */ }
     .news__content {
-      width: 250px;
+      width: 700px;
       bottom: 15px;
       right: 20px;
       left: 60px;
@@ -618,7 +628,7 @@ section {
 
 .news__content {
   position: absolute;
-  text-shadow: 1px 2px 2px black; }
+  text-shadow: 0px 0px 40px black, 0px 0px 20px black, 0px 0px 5px black; }
   .news__content a:hover {
     color: #ff1e95; }
 
