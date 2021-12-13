@@ -4,13 +4,6 @@
 
 */
 
-/* --- GALLERY SCALE ---*/
-
-.scale-img:active{
-   transform:scale(1.2,1.2);
-   box-shadow: 0px 0px 100px 30px black;  
-}
-
 /* --- BUTON FLIP ---*/
 
 $speed: 0.6s;
@@ -96,6 +89,23 @@ $speed: 0.6s;
      opacity: 1;
    }
   }
+
+/* ZOOM IN */
+.click-zoom input[type=checkbox] {
+        display: none
+      }
+      
+      .click-zoom img {
+        transition: transform 0.25s ease;
+        cursor: zoom-in
+      }
+      
+      .click-zoom input[type=checkbox]:checked~img {
+        transform: scale(1.3);
+        cursor: zoom-out
+      }
+
+
 
 /* ###################################### */
 /* ########### ANIMATIONS END ########### */
